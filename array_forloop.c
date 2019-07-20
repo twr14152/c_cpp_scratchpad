@@ -9,7 +9,7 @@ void main(void)
   {
     a[count] = count * 10 + count;
   }
-  printf ("The first and third elements of a are %d and %d\n", 
+  printf ("The first and second elements of a are %d and %d\n", 
 	a[0], a[1]);
   printf ("Or, as pointers, %d and %d\n", *a, *(a+1));
   printf ("The value of a[count] is %d\n", a[count]); 
