@@ -12,8 +12,7 @@ void main(void)
   printf ("The first and second elements of a are %d and %d\n", 
 	a[0], a[1]);
   printf ("Or, as pointers, %d and %d\n", *a, *(a+1));
-  printf ("The value of a[count] is %d\n", a[count]); 
-
+  printf ("The value of a[count] at each index value\n");
   for (i = 0; i < 10; i++)
 	{
 	printf ("a[%d] is equal to %d\n",i, a[i]);
