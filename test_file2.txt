@@ -1,0 +1,7 @@
+router ospf 1
+network 0.0.0.0 0.0.0.0 area 0
+no auto-summary
+line console 0
+  password test
+line vty 0 15
+ password test
