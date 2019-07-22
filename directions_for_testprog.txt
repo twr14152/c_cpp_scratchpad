@@ -1,0 +1,13 @@
+create three files for testprog
+
+main.c
+test_func.c
+test_func.h
+
+
+Compile files
+gcc -o testprog main.c test_func.c
+
+run testprog
+./testprog
+
