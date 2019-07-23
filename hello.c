@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Hello World Script and testing a 2nd func
 
 test()
 {
