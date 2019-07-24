@@ -1,4 +1,5 @@
-After file has been compiled.
+
+compile script
 
 gcc -o copy_in_out copy_in_out.c
 gcc -o copy_in_out copy_in_out_v2.c
@@ -8,3 +9,16 @@ cat <file> | ./copy_in_out
 or
 
 cat <file> | ./copy_in_out_v2
+
+
+pi@raspberrypi:~/Coding_Folder/c_prog $ cat test_file2.txt | ./copy_in_out_v2 
+*** Start of script ***
+router ospf 1
+network 0.0.0.0 0.0.0.0 area 0
+no auto-summary
+line console 0
+  password test
+line vty 0 15
+ password test
+*** End of script ***
+pi@raspberrypi:~/Coding_Folder/c_prog $ 
