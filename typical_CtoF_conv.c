@@ -5,7 +5,7 @@ main()
 	float fahr, celsius;
 	int lower, upper, step;
         char f[] = "fahr"; 
-        char c[] = "celcius";
+        char c[] = "celsius";
 
 	lower = 0;
 	upper = 300;
