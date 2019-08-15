@@ -1,0 +1,7 @@
+Create a file
+
+gcc -o target_exec_file source_file.c
+
+
+run file
+./target_exec_file
