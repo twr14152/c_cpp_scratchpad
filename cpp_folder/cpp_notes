@@ -1,6 +1,16 @@
 To compile a file with c++ on raspian
 
-g++ -std=c++0x hello.cpp -ohello
+Use latest supported version on raspian.
+
+g++ -std=c++14 hello.cpp -ohello
+
+
+c++2a
+c++17
+c++14
+c++11
+c++0x
+
 
 The name of the program to create is specified with the –o flag, in this case we called it hello.  
 The –std=c++0x flag tells the compiler to use the latest version of the c++ standard. 
