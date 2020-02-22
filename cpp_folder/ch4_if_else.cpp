@@ -1,3 +1,4 @@
+// using if else logic for conversion
 #include <iostream>
 using namespace std;
 
