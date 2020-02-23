@@ -6,7 +6,7 @@ using namespace std;
 int main() 
 {
 	vector<string>v = {"red", "blue", "green", "black", "pink", "yellow"};
-	for (string x: v) // This is for each item x in v
+	for (string x: v) // for each x in v
 		cout << x << ",";
 		cout << "\n";
 
