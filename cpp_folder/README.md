@@ -19,7 +19,7 @@ pi@RaspPi4:~/Coding/CPP_folder $
 Study material:
 
 Reading list
-- Programming Principles and Practice Using C++ 2nd Edition (will refer to as PPAPUC++)
+- Programming Principles and Practice Using C++ 2nd Edition (will refer to as PPPC++)
 - A Tour of C++ 2nd Edition 
 - Sams Teach yourself C++ 8th edition
 
@@ -27,7 +27,7 @@ Website
 - learncpp.com
 
 Thoughts on reading material
-- PPAPUC++ - reviews so far are mixed. I was really enjoying it. However, in at the end of the 4th chapter on the topics of vectors I ran into an issue with the sort() function feature and the program won't compile. I figured this is probably a rather important topic and this has my confidence in this source a little rattled. Will try another source to see if I can fill in the gaps. The errata really doesnt touch on this. Closest thing I've seen to a resolution is sort(temps.begin(), temps.end()) and that openned a whole other can of worms.
+- PPPC++ - reviews so far are mixed. I was really enjoying it. However, in at the end of the 4th chapter on the topics of vectors I ran into an issue with the sort() function feature and the program won't compile. I figured this is probably a rather important topic and this has my confidence in this source a little rattled. Will try another source to see if I can fill in the gaps. The errata really doesnt touch on this. Closest thing I've seen to a resolution is sort(temps.begin(), temps.end()) and that openned a whole other can of worms.
 
 - A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this.
-- Sam Teach yourself C++ - pretty easy read, was bouncing between this and PPAPUC++ will bounce back to it.
+- Sam Teach yourself C++ - pretty easy read, was bouncing between this and PPPC++ will bounce back to it.
