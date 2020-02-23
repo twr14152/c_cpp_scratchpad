@@ -27,7 +27,8 @@ Website
 - learncpp.com
 
 Thoughts on reading material
-- PPPC++ - reviews so far are mixed. I was really enjoying it. However, in at the end of the 4th chapter on the topics of vectors I ran into an issue with the sort() function feature and the program won't compile. I figured this is probably a rather important topic and this has my confidence in this source a little rattled. Will try another source to see if I can fill in the gaps. The errata really doesnt touch on this. Closest thing I've seen to a resolution is sort(temps.begin(), temps.end()) and that openned a whole other can of worms.
+- PPPC++ - reviews so far are mixed. I was really enjoying it. First four chapters were great, then at the end of chapter 4 on the topics of vectors, I ran into an issue with the sort() function. The program won't compile as written. I figured this is probably a rather important topic. My confidence in this source a little rattled. Will try another source to see if I can fill in the gaps. The errata really doesnt touch on this. Closest thing I've seen to a resolution was found in a google search and it was to change sort(temps) to sort(temps.begin(), temps.end()). Compiling then moved beyond that initial problem then that openned a whole other can of worms. Needless to say I'm still learning so I'm sure there's a fix.
 
-- A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this.
-- Sam Teach yourself C++ - pretty easy read, was bouncing between this and PPPC++ will bounce back to it.
+- A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this book.
+
+- Sam Teach yourself C++ - pretty easy read, was bouncing between this and PPPC++ will bounce back to it now.
