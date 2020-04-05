@@ -27,7 +27,7 @@ Website
 - learncpp.com
 
 Thoughts on reading material
-- PPPC++ - Good book so far. 
+- PPPC++ - Good book so far.
 
 - A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this book.
 
