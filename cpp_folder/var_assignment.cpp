@@ -11,6 +11,7 @@ int main()
 	int x{4}; //Preferred method
 	int y(5);
 	int z = 10;
+	// Uninitualized variable
 	int u;
 
 	std::cout << "x = " << x << '\n';
