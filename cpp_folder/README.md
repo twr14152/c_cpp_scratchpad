@@ -28,8 +28,7 @@ Website
 - learncpp.com
 
 Thoughts on reading material
-- PPPC++ - Good book so far.
-
+- PPPC++ - Its a good book. Its very thorough, unfortunately its slow to develop when you dont read real fast.
 - A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this book.
-
-- Sam Teach yourself C++ - pretty easy read, was bouncing between this and PPPC++ will bounce back to it now.
+- Sam Teach yourself C++ - pretty good sounding board for PPPC++.
+- C++ Easy steps was a quick way to get back into this after some time off. Rather surface level coverage but enough to glean concepts.
