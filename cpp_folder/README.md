@@ -31,4 +31,4 @@ Thoughts on reading material
 - PPPC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
 - A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this book.
 - Sam Teach yourself C++ - pretty good sounding board for PPPC++.
-- C++ Easy steps was a quick way to get back into this after some time off. Rather surface level coverage but enough to glean concepts.
+- C++ in easy steps - was a quick way to get back into this after some time off. Rather surface level coverage but enough to glean concepts.
