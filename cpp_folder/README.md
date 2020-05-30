@@ -22,7 +22,7 @@ Reading list
 - Programming Principles and Practice Using C++ 2nd Edition (will refer to as PPPC++)
 - A Tour of C++ 2nd Edition 
 - Sams Teach yourself C++ 8th edition
-- C++ Programming in In Easy Steps 5th Edition
+- C++ Programming in easy steps 5th Edition
 
 Website
 - learncpp.com
