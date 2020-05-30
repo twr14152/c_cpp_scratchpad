@@ -8,7 +8,7 @@ int main()
 	cout << "testword[3]:" << testword[3] << endl;
 	cout << "Total teststring array as a string:" << testword << endl;
 	cout << "coords[0][2]:" << coords[0][2] << endl;
-	cout << "coords[1][3]:" << coords[1][3] << ends;
+	cout << "coords[1][3]:" << coords[1][3] << endl;
 	return 0;
 }
 /*
