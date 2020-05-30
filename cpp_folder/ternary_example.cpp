@@ -1,3 +1,6 @@
+//Ternary logic
+//( test-expression ) ? if-true-return-this : if-false-return-this ;
+
 #include <iostream>
 using namespace std;
 
