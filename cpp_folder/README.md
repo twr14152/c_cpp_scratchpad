@@ -19,7 +19,7 @@ pi@RaspPi4:~/Coding/CPP_folder $
 Study material:
 
 Reading list
-- Programming Principles and Practice Using C++ 2nd Edition (will refer to as PPPC++)
+- Programming Principles and Practice Using C++ 2nd Edition (will refer to as PPPuC++)
 - A Tour of C++ 2nd Edition 
 - Sams Teach yourself C++ 8th edition
 - C++ Programming in easy steps 5th Edition
@@ -28,7 +28,7 @@ Website
 - learncpp.com
 
 Thoughts on reading material
-- PPPC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
+- PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
 - A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this book.
-- Sam Teach yourself C++ - pretty good sounding board for PPPC++.
+- Sam Teach yourself C++ - pretty good sounding board for PPPuC++.
 - C++ in easy steps - was a quick way to get back into this after some time off. Rather surface level coverage but enough to glean concepts.
