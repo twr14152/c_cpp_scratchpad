@@ -14,7 +14,7 @@ int main()
 }
 /*
 testword[3]:d
-Total teststring array as a string:abcdefghijklmnopqrstuvwxyz
+Total testword array as a string:abcdefghijklmnopqrstuvwxyz
 coords[0][2]:3
 coords[1][3]:6
 */
