@@ -1,4 +1,4 @@
 The C Programing Language Second Edition 
-- Thoughts so far
-- Going through the excercises in the book and the compiler is barking at me about the implicit 'int' return value. 
-- I don't like it...
+Comments about the book 
+  - Going through the excercises in the book and the compiler is barking at me about the implicit 'int' return value. 
+  - I don't like it...
