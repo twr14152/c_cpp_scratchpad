@@ -3,7 +3,7 @@
 This is a repository I'm using to learn C. 
 
 Books used.
-- The C Programming Language 2e
+- The C Programming Language 2e - tcpl
 - Introduction to C & GUI
 
 
