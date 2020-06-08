@@ -1,6 +1,11 @@
 # c_scratchpad
 
-This is a repository I'm using to learn C
+This is a repository I'm using to learn C. 
+
+Books used.
+- The C Programming Language
+- Introduction to C & GUI
+
 
 C++ examples are in cpp_folder
 
