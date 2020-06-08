@@ -6,4 +6,4 @@ The C Programing Language Second Edition
      main()
      ^~~~
      $ ./ch1ex4 
-  - Thats kinda driving me crazy
+  - The code still runs just kinda driving me crazy
