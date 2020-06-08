@@ -4,6 +4,6 @@ The C Programing Language Second Edition
     ``` $ gcc -o ch1ex4 ch1ex4.c 
      ch1ex4.c:3:1: warning: return type defaults to 'int' [-Wimplicit-int]
      main()
-     ^~~~```
+     ^~~~
 pi@RaspPi4:~/Coding/C_folder $ ./ch1ex4 
   - Thats kinda driving me crazy
