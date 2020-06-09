@@ -1,5 +1,6 @@
 /*
-If the body of a forloop is a single line then {} are not required
+Rule as with while loops the for loop body can be a single statement
+or multiple statements enclosed in braces {}.
 */
 
 #include <stdio.h>
