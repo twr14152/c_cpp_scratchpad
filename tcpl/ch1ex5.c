@@ -1,3 +1,8 @@
+/*
+Rule - as with while loops the for loop body can be a single statement
+or multiple statements enclosed in braces {}.
+*/
+
 #include <stdio.h>
 
 int main()
