@@ -11,7 +11,8 @@ int main()
                                                         
        
         printf("Table: Fahrenheit to Celsius\n");
-        for (fahr = upper; fahr >= 0; fahr -= 20) {
+        for (fahr = upper; fahr >= 0; fahr -= 20)
+        {
                 celsius = (5.0 / 9.0) * (fahr - 32.0);
                 printf("%3.0f %6.1f\n", fahr, celsius);
         }
