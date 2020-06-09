@@ -17,7 +17,7 @@ int main()
     printf("Table: Fahrenheit to Celsius\n");
     for (fahr = upper; fahr >= 0; fahr -= 20) 
         printf("%3.0f %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
-	return 0;
+    return 0;
 }
 /*
 pi@RaspPi4:~/Coding/C_folder $ ./ch1ex5 
