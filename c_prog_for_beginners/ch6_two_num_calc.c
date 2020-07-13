@@ -26,7 +26,7 @@ int main()
 		break;
 	case '/':
 		if (num1 == 0 || num2 == 0)
-			printf("Cannot use 0 in division");
+			printf("Cannot use 0 in division\n\n\n");
 		else 
 			printf("%d %c %d = %d\n", num1, ov, num2, num1/num2);
 		break;
@@ -41,3 +41,5 @@ int main()
 	}
 	return 0;
 }
+
+
