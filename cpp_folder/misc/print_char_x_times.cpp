@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//function has default values
 void printLine(int width = 5, char character = 'a') 
 {
 	for (int i = 0; i < width; i++) {
