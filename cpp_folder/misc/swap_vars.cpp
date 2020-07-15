@@ -14,7 +14,7 @@ int main()
 	cout << "Post swap() order " << x << "," << y << endl;
 	return 0;
 }
-
+// The & after the parameter type in the function links the function to the same space in memory
 void swap(int& a, int& b) {
 	int temp = a;
 	a = b;
