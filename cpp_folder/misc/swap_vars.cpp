@@ -16,6 +16,7 @@ int main()
 }
 // The & after the parameter type in the function links the function to the same space in memory
 // a and x share the same memory space as do b and y.
+// Passed as a reference rather than a copy......
 void swap(int& a, int& b) {
 	int temp = a;
 	a = b;
