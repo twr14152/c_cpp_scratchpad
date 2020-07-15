@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+//prototype - declaration
+void swap(int& a, int& b);
+
+int main()
+{
+	int x = 17;
+	int y = 35;
+	cout << "Pre swap() order " << x << "," << y << endl;
+	swap(x, y);
+	cout << "Post swap() order " << x << "," << y << endl;
+	return 0;
+}
+
+void swap(int& a, int& b) {
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+/*
+pi@RaspPi4:~/Coding/CPP_folder/Misc $ ./swap_vars 
+Pre swap() order 17,35
+Post swap() order 35,17
+
+*/
