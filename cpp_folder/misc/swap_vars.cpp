@@ -15,6 +15,7 @@ int main()
 	return 0;
 }
 // The & after the parameter type in the function links the function to the same space in memory
+// a and x share the same memory space as do b and y.
 void swap(int& a, int& b) {
 	int temp = a;
 	a = b;
