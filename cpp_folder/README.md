@@ -23,6 +23,7 @@ Reading list
 - A Tour of C++ 2nd Edition 
 - Sams Teach yourself C++ 8th edition
 - C++ Programming in easy steps 5th Edition
+- Programming Abstractions in C++
 
 Website
 - learncpp.com
@@ -32,3 +33,6 @@ Thoughts on reading material
 - A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this book.
 - Sam Teach yourself C++ - pretty good sounding board for PPPuC++.
 - C++ in easy steps - was a quick way to get back into this after some time off. Rather surface level coverage but enough to glean concepts.
+- Programming Abstractions in C++ has been the easiest read so far...
+
+This is definitely going to be a marathon vs a sprint. Just dont have the brain capacity to quickly digest any of this material. Slow and steady.
