@@ -16,17 +16,18 @@ int main()
 		scanf("%d", &grade);
 	}
 	printf("You've entered %d grades. \n", gradesCount);
-	printf("Your average grade is %f \n", (float)totalSum/gradesCount);
+	printf("Your average grade is %.2f \n", (float)totalSum/gradesCount);
 
 	return 0;
 }
 /*
 pi@RaspPi4:~/Coding/C_folder/c_prog_for_beginners $ ./ch7.milestone1 
-Enter your grades or '-1' to stop: 81
-Enter you grades or '-1' to stop: 85
-Enter you grades or '-1' to stop: 70
-Enter you grades or '-1' to stop: 78
+Enter your grades or '-1' to stop: 78
+Enter you grades or '-1' to stop: 67
+Enter you grades or '-1' to stop: 80
+Enter you grades or '-1' to stop: 71
 Enter you grades or '-1' to stop: -1
 You've entered 4 grades. 
-Your average grade is 78.500000 
+Your average grade is 74.00 
+pi@RaspPi4:~/Coding/C_folder/c_prog_for_beginners $ 
 */
