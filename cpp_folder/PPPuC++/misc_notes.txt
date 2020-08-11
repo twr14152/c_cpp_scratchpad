@@ -1,0 +1,4 @@
+Misc notes
+
+The switch logic will only work with (int, char, enumeration). Strings will not
+Must use if else logic to compare strings.
