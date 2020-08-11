@@ -1,4 +1,6 @@
 Misc notes
 
-The switch logic will only work with (int, char, enumeration). Strings will not
-Must use if else logic to compare strings.
+switch vs if/else
+- The switch logic will only work with values such as int, char, and enumerations. Not Strings...
+- case statement must end with break.
+- Must use if/else logic to compare strings values or maps.
