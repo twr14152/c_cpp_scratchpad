@@ -8,7 +8,7 @@ int main()
 {
 	int i = 0;
 	while (i<100) {
-		cout << i << '\t' << "square: " << square(i) << '\t' << "sqrt: " << sqrt(i) << '\n'; 
+		cout << "starting number: " << i << '\t' << "square: " << square(i) << '\t' << "sqrt: " << sqrt(i) << '\n'; 
 		++i;
 	}
 }
