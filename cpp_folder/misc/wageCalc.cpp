@@ -35,7 +35,7 @@ int main()
 
 
 
-
+/*
 $ ./wageCalc 
 Enter payrate per hour: 
 21
@@ -47,3 +47,4 @@ Your weekly wage for 40hrs is $840
 Your overtime amount is $267.75
 You earned $1107.75 this week.
 $ 
+*/
