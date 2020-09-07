@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// declare functions
 void one();
 void two();
 
