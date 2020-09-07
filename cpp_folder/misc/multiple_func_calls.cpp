@@ -23,3 +23,11 @@ void two()
 {
     cout << "function two" << endl;
 }
+
+/*
+pi@raspberrypi:~/Code_folder/cpp_folder $ ./multiple_func_calls 
+main function
+function one
+function two
+pi@raspberrypi:~/Code_folder/cpp_folder $ 
+*/
