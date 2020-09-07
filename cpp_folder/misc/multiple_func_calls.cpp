@@ -15,7 +15,7 @@ int main()
 void one() 
 {
     cout << "function one" << endl;
-    two  ();
+    two();
 }
 
 void two() 
