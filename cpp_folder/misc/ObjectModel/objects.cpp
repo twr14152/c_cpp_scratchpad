@@ -26,3 +26,12 @@ int main()
 	std::cout << "The area of rectangle blue is: " << blue.get_area() << std::endl;
 	return 0;
 }
+
+/*
+pi@RaspPi4:~/Coding/CPP_folder/microsoft_CPP_tut/ObjectModel $ ./object_1 
+The area of rectangle aggregate is: 2
+The area of rectangle value is: 25
+The area of rectangle blue is: 36
+pi@RaspPi4:~/Coding/CPP_folder/microsoft_CPP_tut/ObjectModel $ 
+
+*/
