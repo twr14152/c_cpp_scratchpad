@@ -1,0 +1,203 @@
+Objects:
+
+void f()
+{                 //scope starts
+
+	int x{1};       // exists within scope 
+	int y{2};	// exists within scope	
+
+}                 //scope ends
+
+
+
+
+	copying vs assignment
+
+	y = x;     // Assignment
+	int y{x};  // Copying
+
+
+Classes:
+
+class Rectangle
+
+{
+
+Public:
+
+	int _width;
+
+	int _height;
+
+};      // class ends with ;
+
+
+void f()
+
+{
+
+
+	Rectangle small_rectangle;
+
+	small_rectangle._width = 3;
+
+	small_rectangle._height = 4;
+
+}
+
+
+Initialization:
+
+void f()
+
+{
+
+	int x{};                          // x == 0
+
+	Rectangle small_rectangle{};  // _width == 0; _height == 0
+
+}
+
+
+----------------
+
+void f()
+
+{
+
+	Rectangle rectangle_a;	     // uninitialized	
+	
+	Rectangle rectangle_b{};     // _width = 0; _height = 0
+	
+	Rectangle rectangle_c{2, 3}; // _width = 2; _height = 3
+	
+	// -or-
+
+	Rectangle rectangle_d{};
+	rectangle_d._width = 2;
+	rectangle_d._height = 3;
+
+}
+
+
+
+
+Encapsulation:
+
+int compute_area(Rectangle the_rectangle)
+
+{
+	return the_rectangle._width * the_rectangle._height;
+}
+
+void f()
+
+{
+	Rectangle a_rectangle{3, 4};
+	int the_area{compute_area(a_rectangle)};
+}
+
+
+member function or method:
+
+class Rectangle
+{
+public:
+	int get_area()
+	{
+		return this->_width * this->_height;   //this-> equivalient to self in python. Most people do not include this-> in code
+		return _width * _height;		// use this without this->
+	}
+	
+	int _width;
+	int _height;
+
+};
+
+void f()
+{
+	Rectangle a_rectangle{3, 4};
+	int the_area{a_rectangle.get_area()};
+}
+
+
+
+---
+
+class Rectangle
+{
+public:
+	int get_area()
+	{
+		return _width * _height;
+	}
+	int get_width() { return _width; }
+	int get_height() { return _height; }
+
+private:
+	int _width;
+	int _height;
+};
+
+void f()
+{
+	Rectangle small_rectangle{};
+
+	// These wont work:
+	int the_width = small_rectangle._width;
+	int the_height = small_rectangle._height;
+
+	// These work:
+	int the_width = small_rectangle.get_width();
+	int the_height = small_rectangle.get_height();
+}
+
+
+
+
+---
+Constructor:
+
+class Rectangle
+{
+public:
+	Rectangle()
+		: _width{}, _height{}
+	{ }
+	Rectangle(int initial_width, int initial_height)
+		: _width{initial_width}, _height{initial_height}
+	{ }
+private:
+	int _width;
+	int _height;
+
+};
+
+void f()
+{
+	// Initialize (calls default constructor) but still dont do this
+	Rectangle rectangle_a;
+
+	Rectangle rectangle_b{}; // _width = 0; _height = 0
+	Rectangle rectangle_c{2, 3}; // _width = 2; _height = 3
+
+	Rectangle rectangle_d{};
+	rectangle_d.resize(2, 3);
+}
+
+
+Const Objects;
+
+class Rectangle
+{
+public:
+	int get_area() const
+	{
+		return _width * _height;
+	}
+	
+
+	// ...
+};
+
+
