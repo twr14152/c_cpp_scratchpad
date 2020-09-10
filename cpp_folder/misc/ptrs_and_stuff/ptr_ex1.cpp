@@ -20,6 +20,11 @@ int main()
     *p = 40;
     cout << "The value of p now is: " << *p << endl;
     cout << "The value of y is now: " << y << endl;
+    p = nullptr;
+    cout << "The value of p pointing to nullptr: " << p << endl;
+    // Below caused an error
+    //cout << "The value dereferenced *p: " << *p << endl;
+
 }
 
 /*
