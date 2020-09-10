@@ -1,0 +1,88 @@
+Pointer:
+Points to the start of a block of memory set aside for an object or variable
+- Dont have to be initialize but can be
+- Can change what a pointer points to.
+
+
+To create a pointer:
+
+int x{1};
+
+int* ptr_to_x{&x};
+
+To dereference:
+
+int y{*ptr_to_x};
+
+To change a pointer value:
+
+*ptr_to_x = 2;
+
+
+Different than References
+References are used to create another name for a piece of memory.
+- A reference has to be initialized 
+- Can't be changed to refer to something else later.
+
+
+
+Reference:
+int& {x};
+
+Pointer:
+int* {&x};
+
+
+How to change ptr value:
+
+void example()
+{
+	int x{1};
+	int y{2};
+
+	int* p{&x};
+	p = &y;
+}
+
+
+
+Null pointer
+Special value that isnt pointing to anything at the time of creation.
+{
+	int p{nullptr};
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int x{1};
+    int y{2};
+    // ptr creation
+    int* p{&x};
+    cout << "Ptr p is assigned to x{1}" << endl;
+    cout << "This is what the value of p looks like: "<< p << endl;
+    cout << "This is how to derefence p: *p : " << *p << endl;
+    cout << "This is how you change value of ptr p: p = {&y}; " << endl;
+    // ptr p reassigned to &y
+    p = &y;
+    // to dereference new ptr value
+    cout << "This is the value of p: " << *p << endl;
+    // to update the pointer value
+    *p = 40;
+    cout << "The value of p now is: " << *p << endl;
+    cout << "The value of y is now: " << y << endl;
+}
+
+/*
+output:
+Ptr p is assigned to x{1}
+This is what the value of p looks like: 0x7ffdbbd42d9c
+This is how to derefence p: *p : 1
+This is how you change value of ptr p: p = {&y}; 
+This is the value of p: 2
+The value of p now is: 40
+The value of y is now: 40
+*/
