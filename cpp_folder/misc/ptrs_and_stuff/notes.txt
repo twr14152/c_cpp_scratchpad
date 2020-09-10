@@ -25,7 +25,6 @@ References are used to create another name for a piece of memory.
 - Can't be changed to refer to something else later.
 
 
-
 Reference:
 int& {x};
 
@@ -52,6 +51,8 @@ Special value that isnt pointing to anything at the time of creation.
 	int p{nullptr};
 }
 
+Do not dereference null pointer. It will crash your program!
+
 #include <iostream>
 
 using namespace std;
@@ -76,20 +77,124 @@ int main()
     cout << "The value of y is now: " << y << endl;
     p = nullptr;
     cout << "The value of p pointing to nullptr: " << p << endl;
-    // Below caused an error
-    cout << "The value dereferenced *p: " << *p << endl;
-
+    // Do not dereference a null pointer it will crash your program!
+    //cout << "The value dereferenced *p: " << *p << endl;
 }
 
-
 /*
+output:
 Ptr p is assigned to x{1}
-This is what the value of p looks like: 0x7ffd3346bcac
+This is what the value of p looks like: 0x7ffcdb844a6c
 This is how to derefence p: *p : 1
 This is how you change value of ptr p: p = {&y}; 
 This is the value of p: 2
 The value of p now is: 40
 The value of y is now: 40
 The value of p pointing to nullptr: 0
-bash: line 7: 27475 Segmentation fault      (core dumped) ./a.out
+bash: line 7:   318 Segmentation fault      (core dumped) ./a.out
 */
+
+
+Dynamic allocation:
+
+The Free Store - object value that exceeds the scope it was created in.
+aka "the heap"..
+- Seperate area of memory 
+- Objects created there exist until they are manually cleaned up
+- To create one, use new - returns a pointer
+- To clean up, use delete
+
+
+void example()
+{
+	int* p{new int{1}};  //new creates pointer with value 1
+	*p = 2
+	delete p;   // have to clean up or could lead to memory leak
+}
+
+
+
+Exceptions:
+
+try 
+{
+	// 
+}
+catch ( const std::exception& e)
+{
+	std::cout << "Exception caught: " << e.what();
+}
+
+Copying, Assignment, and Destruction    
+
+int x{1};
+int y{x};  //copying
+
+y = x;     //assignment
+
+
+
+Rectangle x{3, 4};
+
+Rectangle y{x};     // Copying
+
+y = x;              // Assignment
+
+
+Copying a class-type object invokes a special constructor
+- Called the copy constructor
+- Rectangle(Rectangle const&);
+- If you don't define one, the compiler provides one by default
+- The default is to copy each base and data member
+
+Rectangle(Rectangle const& other)
+	: _width{other._width}, _height{other._height}
+{}
+
+
+Assigning to a class-type object invokes a special operator
+- Called the assignment operator
+- Rectangle& operator=(Rectangle const&);
+- If you don't define one, the compiler provides one by default
+- The default behavior is to assign each base and data member
+
+Rectangle& operator=(Rectangle const& other)
+{
+	_width = other._width;
+	_height = other._height;
+	return *this;
+}
+
+Destructor
+- Name is always ~ Plus the name of the class
+	- E.g. ~Rectangle()
+- Returns nothing, takes no parameters
+- Place to cleanup resources used by an object
+	- Close a file
+	- Release a lock
+	- Etc
+- When exceptions transfer execution out of a scope, everything declared in that scope is cleaned up
+	- Desctuctor runs
+
+
+
+Really boring discussion that had very little intrest for me.
+
+
+Smart pointers
+- unique_ptr if only one object needs access to the underlying pointer
+- shared_ptr if several want to use the same underlying pointer
+	- Cleaned up when the last copy goes out of scope
+- In <memory> header file
+- If you are using new or delete, your doing it wrong
+
+RAII in General
+- Constructor aquires a resource
+	- E.g. opens a file
+- All other member functions know resource is aquired
+	- Dont need to test and make sure
+- Destructor releases resource
+	- Works even in the presence of exceptions
+	
+EYES GLAZING OVER VERY VERY DRY.....
+
