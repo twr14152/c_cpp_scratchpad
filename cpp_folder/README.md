@@ -29,6 +29,9 @@ Reading list
 Website
 - learncpp.com
 
+Videos
+ - C++ A General Purpose Language and Library
+
 Thoughts on reading material
 - C++ Primer 5th Edition easier reading that PPPuC++.
 - PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
