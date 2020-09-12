@@ -74,8 +74,8 @@ int main()
     
     // Range for loop
     int total2 {0};
-    for (auto elem : integers) {
-        total2 += elem;
+    for (auto item : integers) {
+        total2 += item;
     }
     cout << "Total2 = " << total2 << endl;
     
