@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string> // included as recommended practice
+#include <string> 
 using namespace std;
 
 int main()
@@ -10,7 +10,7 @@ int main()
 	while(cin>>current) {
 		++number_of_words;
 		if (previous == current)
-			cout << "word number" << number_of_words
+			cout << "word number " << number_of_words
 				<< " repeated: " << current << '\n';
 		previous = current;
 		if (current == "break")
