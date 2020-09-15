@@ -11,24 +11,23 @@ int main()
 		++number_of_words;
 		if (previous == current)
 			cout << "word number " << number_of_words
-				<< " repeated: " << current << '\n';
+				<< " repeated words: " << current << '\n';
 		previous = current;
 		if (current == "break")
 			break;
 	}
 }
 
-
 /*
 pi@RaspPi4:~/Coding/CPP_folder/PPPuCPP $ ./ch3.6_detect_repeats 
-test
-test
-word number2 repeated: test
-to to
-word number4 repeated: to
-five five
-word number6 repeated: five
-one two
-break
+one
+one
+word number 2 repeated words: one
+two 
+three
+four
+four
+word number 6 repeated words: four
+^C
 pi@RaspPi4:~/Coding/CPP_folder/PPPuCPP $ 
 */
