@@ -13,7 +13,7 @@ int main()
   cout << "Whats your first name?\n";
   cin >> first_name;
   cout << "Hello  " << first_name << "," << endl;
-	cout << "\nI'm writing you to let you know that I am performing a drill in the world longest book. It feels kinda silly writing this out, but its to test the concepts in the chapter." << endl;
+  cout << "\nI'm writing you to let you know that I am performing a drill in the world longest book. It feels kinda silly writing this out, but its to test the concepts in the chapter." << endl;
   string friends_name;
   cout <<"\nWhats the first name of one of your friends?\n";
   cin >> friends_name;
