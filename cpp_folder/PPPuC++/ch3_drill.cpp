@@ -29,7 +29,7 @@ int main()
   cout << "\nI know this sounds a little weird, but how old are you again?\n";
   int age;
   cin >> age;
-  cout << "\nI know more creepiness..You just had a birthday and you are " << age << " years old.\n";
+  cout << "\nI know,, more creepiness..You just had a birthday and you are " << age << " years old.\n";
   if (age <= 0 || age >= 110) {
     simple_error("Your kidding!");
   } else if (age < 12) {
@@ -39,10 +39,11 @@ int main()
   } else if (age > 70) {
     cout << "Hope you are enjoying retirement..." << endl;
   } else {
-    cout << "Welp " << age << " is a pretty uneventful year.." << endl;
+    cout << "\nWelp " << age << " is a pretty uneventful year.." << endl;
   }
   
-  cout << "Well its been real.." << "\n\n\t-Todd";
+  cout << "\n\nWell its been real.." << "\n\n-Todd" << endl;
+	
 
   return 0;
 }
