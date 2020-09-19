@@ -24,3 +24,10 @@ int main()
   cout << endl;
   return 0;
 }
+
+/*
+ ./main
+[11][13][46][46]
+[Todd][Lindsey][Chuck][Buck]
+ 
+*/
