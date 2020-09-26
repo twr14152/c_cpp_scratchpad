@@ -31,6 +31,7 @@ int main()
 	return 0;
 }
 
+/*
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ ./vector_example1 
 Vector size: 3
 Is empty?: 0
@@ -55,3 +56,4 @@ The vector has 3 elements
 As we loop the value of total is: 500
 total = 500
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ 
+*/
