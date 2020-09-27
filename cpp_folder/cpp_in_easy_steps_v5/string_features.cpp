@@ -6,6 +6,10 @@ void computeFeature(string);
 
 int main() 
 {
+  string a = "This is a test";
+  string b = "This is";
+  string c = " a test";
+
   string text = "Studying C++ is time consuming";
   computeFeature(text);
   text += " for everyone";
@@ -14,6 +18,17 @@ int main()
   computeFeature(text);
   text.clear();
   computeFeature(text);
+  
+  cout << "Appended: " << b.append(c) << endl;
+  cout << "Original: " << b << endl << endl;
+  cout << "Differ: " << (a==b) << endl;
+  cout << "Match: " << (b==c) << endl << endl;
+
+  cout << "Match: " << a.compare(b) << endl;
+  cout << "Differ: " << a.compare(c) << endl;
+  cout << "Lower ASCII: " << a.compare("ttttt") << endl;
+
+  
   return 0;
 }
 
@@ -42,5 +57,14 @@ Empty?: 0
 String: 
 Size: 0
 Empty?: 1
+Appended: This is a test
+Original: This is a test
+
+Differ: 1
+Match: 0
+
+Match: 0
+Differ: 1
+Lower ASCII: -1
  
 */
