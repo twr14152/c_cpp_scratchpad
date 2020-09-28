@@ -15,10 +15,13 @@ int main()
 		cout << "Error openning file for output" << endl;
 		return -1;
 	}
+	//Print to screen what will be in your file
+	//cout << "Configurations that will be written into file: " << endl << router_config << endl;
 	writer << router_config << endl;
 	writer.close();
 	return 0;
 }
+
 
 /*
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ cat router_config.txt 
