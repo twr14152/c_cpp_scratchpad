@@ -1,3 +1,4 @@
+// throw() is good for manually throwing exception to customize and test error handling
 #include <iostream>
 using namespace std;
 
