@@ -1,4 +1,5 @@
-// throw() is good for manually throwing exception to customize and test error handling
+// throw() is good for manually throwing exception to customize and test the results
+//
 #include <iostream>
 using namespace std;
 
