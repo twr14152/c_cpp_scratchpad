@@ -38,7 +38,7 @@ int main()
   cout << "Gibby is a " << gibby.getColor() << " dog" << endl;
   cout << "Gibby is " << gibby.getAge() << " years old" << endl;
   cout << "Gibby weighs " << gibby.getWeight() << " pounds" << endl;
-  jack.bark();
+  gibby.bark();
   return 0;
 }
 
