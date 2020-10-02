@@ -33,12 +33,23 @@ int main()
   cout << "Jack is " << jack.getAge() << " years old" << endl;
   cout << "Jack weighs " << jack.getWeight() << " pounds" << endl;
   jack.bark();
+  Dog gibby;
+  gibby.setValues(4, 60, "black");
+  cout << "Gibby is a " << gibby.getColor() << " dog" << endl;
+  cout << "Gibby is " << gibby.getAge() << " years old" << endl;
+  cout << "Gibby weighs " << gibby.getWeight() << " pounds" << endl;
+  jack.bark();
   return 0;
 }
+
 /*
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ ./multiple_objects 
 Jack is a brown dog
 Jack is 6 years old
 Jack weighs 140 pounds
+Woof 
+Gibby is a black dog
+Gibby is 4 years old
+Gibby weighs 60 pounds
 Woof 
 */
