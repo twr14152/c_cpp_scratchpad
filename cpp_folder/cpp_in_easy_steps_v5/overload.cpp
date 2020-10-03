@@ -1,6 +1,7 @@
 // Create an Object
 // access specifiers { private = default, public, protected }
-//
+// Example how to overload methods bark() and Dog()
+
 #include <iostream>
 #include <string>
 using namespace std;
