@@ -1,0 +1,82 @@
+pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ cat ops.h
+class Calculator
+{
+	public :
+		Calculator();
+		void launch();
+		void readInput();
+		void writeOutput();
+		bool run();
+
+	private :
+		double num1, num2;
+		char oper;
+		bool status;
+};
+pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ cat ops.cpp
+#include "ops.h"
+#include <iostream>
+using namespace std;
+
+Calculator::Calculator()
+{status = true ; }
+
+void Calculator::launch()
+{
+	cout << endl << "*** SUM CALCULATOR ***" << endl;
+	cout << "Enter a number, and operator(+,-,*,/), and another number." << endl << "Hit Return to calculate. Enter zero to exit." << endl;
+}
+
+void Calculator::readInput()
+{
+	cout << "> "; cin >> num1;
+	if (num1 == 0) status = false;
+	else {cin >> oper; cin >> num2;}
+}
+
+void Calculator::writeOutput()
+{
+	if (status) switch(oper)
+	{
+		case '+': {cout << (num1 + num2) << endl; break;}
+		case '-': {cout << (num1 - num2) << endl; break;}
+		case '*': {cout << (num1 * num2) << endl; break;}
+		case '/': if (num2 != 0)
+				  cout << (num1/num2) << endl;
+			  else cout << "Cannot divide by zero" << endl;
+	}
+}
+
+bool Calculator::run()
+{return status;}
+
+pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ cat sum.cpp
+#include "ops.h"
+
+int main()
+{
+	Calculator* pCalc = new Calculator;
+	pCalc -> launch();
+	while (pCalc -> run())
+	{
+		pCalc -> readInput();
+		pCalc -> writeOutput();
+	}
+
+	return 0;
+}
+pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ ./sum
+
+*** SUM CALCULATOR ***
+Enter a number, and operator(+,-,*,/), and another number.
+Hit Return to calculate. Enter zero to exit.
+> 2 + 4
+6
+> 2*6
+12
+> 7-3
+4
+> 4/4
+1
+> 0
+pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ 
