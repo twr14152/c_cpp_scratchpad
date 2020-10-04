@@ -41,8 +41,11 @@ int main()
 	return 0;
 
 }
+
+/*
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ ./capability 
 Pigeon talk
 Chicken talk
 error-Program ended.
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ 
+*/
