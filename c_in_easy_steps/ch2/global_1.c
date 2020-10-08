@@ -10,3 +10,11 @@ int main()
 	printf("Num is %d \n", num);
 	return 0;
 }
+
+/*
+pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch2 $ gcc global_1.c global_2.c -o global
+pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch2 $ ./global 
+Sum is 100 
+Num is 200 
+pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch2 $
+*/
