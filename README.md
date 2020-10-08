@@ -7,6 +7,7 @@ A wasteland of code used only to aid in understanding how certain features work.
 Books used.
 - The C Programming Language 2e - tcpl
 - Introduction to C & GUI
+- C Programming in easy steps
 
 
 C++ examples are in cpp_folder
