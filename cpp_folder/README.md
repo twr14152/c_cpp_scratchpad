@@ -21,7 +21,7 @@ Study material:
 Reading list
 - C++ Primer 5th Edition
 - Programming Principles and Practice Using C++ 2nd Edition (will refer to as PPPuC++)
-- A Tour of C++ 2nd Edition 
+- A Tour of C++ 2nd Edition
 - Sams Teach yourself C++ 8th edition
 - C++ Programming in easy steps 5th Edition
 - Programming Abstractions in C++
@@ -35,7 +35,7 @@ Videos
 Thoughts on reading material
 - C++ Primer 5th Edition easier reading that PPPuC++.
 - PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
-- A Tour of C++ 2nd Edition - Assumes reader already familiar. Not really ready for this book.
+- A Tour of C++ 2nd Edition - still a tough read.
 - Sam Teach yourself C++ - pretty good sounding board for PPPuC++.
 - C++ in easy steps - was a quick way to get back into this after some time off. Rather surface level coverage but enough to glean concepts.
 - Programming Abstractions in C++ has been the easiest read so far....(bare in mind I'm 10% the way through a 900+ Page book.
