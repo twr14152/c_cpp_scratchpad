@@ -16,6 +16,7 @@ int main()
 	cout << "Start of script" << endl;
 	cout << read_and_sum(5) << endl;
 	cout << "End of script" << endl;
+	return 0;
 	
 }
 
