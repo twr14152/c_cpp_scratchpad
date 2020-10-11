@@ -17,6 +17,7 @@ int main()
 	p = q;
 	cout << "p = q :" << p << "\n";
 	cout << "*p = " << *p << "\n";
+	return 0;
 }
 /*
 pi@RaspPi4:~/Coding/CPP_folder/tourofcpp/ch1 $ ./ex1.9 
