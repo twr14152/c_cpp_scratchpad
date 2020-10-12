@@ -1,5 +1,5 @@
 // Typecasting from Think C++ book compared to other style
-// both appear to work
+// both appear to work. Neither are preferred. Recommended 'static_cast<type> variable'
 #include <iostream>
 
 using namespace std;
@@ -12,7 +12,7 @@ int main()
 	int x = int (pi); //Think C++ had example i've not seen
 	cout << x << endl;	
 	
-	int y = (int) pi; //This is the fmt I've seen
+	int y = (int) pi; //This is the fmt I've seen to read more learncpp.com
 	cout << y << endl;
 	
 	cout << pi << endl;
