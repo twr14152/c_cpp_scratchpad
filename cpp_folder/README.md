@@ -19,7 +19,7 @@ pi@RaspPi4:~/Coding/CPP_folder $
 Study material:
 
 Reading list
-- Think C++ 
+- How to Think Like a Computer Scientist: C++ Version
 - C++ Primer 5th Edition
 - Programming Principles and Practice Using C++ 2nd Edition (will refer to as PPPuC++)
 - A Tour of C++ 2nd Edition
@@ -34,7 +34,7 @@ Videos
  - C++ A General Purpose Language and Library
 
 Thoughts on reading material
-- Think C++ by Allen Downey - This guys my favorite technical author. His writing style is short chapters with clean and clear examples. The book very easy to read. It covers the basics of the language. You will need more but this is an easy and recommended starting point. This book is the C++ equivalent to Think Python.
+- How to Think Like a Computer Scientist: C++ Version, by Allen Downey - This guys my favorite technical author. His writing style is short chapters with clean and clear examples. The book very easy to read. It covers the basics of the language. You will need more but this is an easy and recommended starting point. This book is the C++ equivalent to Think Python.
 - C++ Primer 5th Edition easier reading that PPPuC++.
 - PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
 - A Tour of C++ 2nd Edition - This is a dense book and a slow read. No training wheels provided. My plan is to simply code out the examples and see what happens.
