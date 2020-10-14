@@ -1,3 +1,4 @@
+// Cast from float to int get truncated. From double to float get rounded.
 #include <stdio.h>
 
 int main()
