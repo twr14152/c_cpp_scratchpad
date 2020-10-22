@@ -1,5 +1,5 @@
 #include <stdio.h>
-// in func declaration variable name is not required only type is
+// in func declaration var name is not required only type is
 void menu();
 void action(int);
 
