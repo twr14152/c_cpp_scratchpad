@@ -3,9 +3,6 @@
 void twice(int *ptr2);
 void thrice(int *ptr2);
 
-
-
-
 int main() {
 	int num = 8;
 	int *ptr = &num;
