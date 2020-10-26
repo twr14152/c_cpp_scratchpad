@@ -17,13 +17,14 @@ int main()
 	char s4[] = " and Never Simple. - Oscar Wilde";
 	strcat(s1,s2);
 	printf("\n%s\n", s1);
-	strncat(s3,s4, 17);
+	strncat(s3,s4, 17); // concat the first 17 chars for s4
 	printf("\n%s\n", s3);
-	strncat(s3,(s4 + 17), 14);
+	strncat(s3,(s4 + 17), 14); // append the last 14 chars at position 17
 	printf("\n%s\n", s3);
 	
 	return 0;
 }
+
 /*
 pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch8 $ ./strConcat 
 
