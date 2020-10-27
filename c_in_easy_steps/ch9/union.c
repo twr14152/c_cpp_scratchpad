@@ -1,3 +1,5 @@
+// Unions are valuable when there's not much memory to work with
+
 #include <stdio.h>
 
 typedef struct
