@@ -25,6 +25,9 @@ int main()
 	printf("String: %s", sdata.str);
 	printf("\tStored at: %p\n", &sdata.str);
 
+	// Because of the union keyword values can only be assigned
+	// individually as the program goes on
+	//
 	udata.num = 16;
 	printf("\nUnion:\nNumber: %d", udata.num);
 	printf("\tStored at: %p\n", &udata.num);
@@ -40,16 +43,17 @@ int main()
 	return 0;
 }
 /*
+pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch9 $ gcc union.c -o union
 pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch9 $ ./union 
 
 Structure:
-Number:10	Stored at:0xbee5b204
-Letter: C	Stored at:0xbee5b208
-String: Program	Stored at: 0xbee5b20c
+Number:10	Stored at:0xbe80d204
+Letter: C	Stored at:0xbe80d208
+String: Program	Stored at: 0xbe80d20c
 
 Union:
-Number: 16	Stored at: 0xbee5b200
-Letter: A	Stored at; 0xbee5b200
-String: Union	Stored at: 0xbee5b200
+Number: 16	Stored at: 0xbe80d200
+Letter: A	Stored at; 0xbe80d200
+String: Union	Stored at: 0xbe80d200
 pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch9 $ 
 */
