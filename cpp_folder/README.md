@@ -39,7 +39,7 @@ Thoughts on reading material
 - PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
 - A Tour of C++ 2nd Edition - This is a dense book and a slow read. No training wheels provided. My plan is to simply code out the examples and see what happens.
 - Sam Teach yourself C++ - pretty good sounding board for PPPuC++.
-- C++ in easy steps 5e - was a quick way to get back into this after some time off. Learn basic concepts using sample code. Good at showing the what and how, the why would be better learned from another book. You'll gain familiarity with syntax and basic concepts but your not going to build a 3D game with this book. Simple programs basic concepts. To get the most out of this you will want to code the examples out and then deviate from the sample code to see what it can do. 
+- C++ in easy steps 5e - was a quick way to get back into this after some time off. Learned basic concepts using sample code. Good at showing the what and how, the why would be better learned from another book. You'll gain familiarity with syntax and basic concepts but your not going to build a 3D game with this book. Simple programs basic concepts. To get the most out of this you will want to code the examples out and then deviate from the sample code to see what it can do. 
 - Programming Abstractions in C++ has been the easiest read so far....(bare in mind I'm 10% the way through a 900+ Page book.
 
 This is definitely going to be a marathon vs a sprint. Just dont have the brain capacity to quickly digest any of this material. Slow and steady.
