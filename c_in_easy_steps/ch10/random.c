@@ -26,6 +26,7 @@ int main()
 	return 0;
 }
 
+/*
 pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch10 $ ./random 
 
 Your Ten random numbers are: 34 23 17 4 43 31 28 35 55 14 
@@ -39,3 +40,4 @@ pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch10 $ ./random
 Your Ten random numbers are: 21 30 29 40 13 47 55 49 48 45 
 
 pi@RaspPi4:~/Coding/C_folder/in_easy_steps/ch10 $ 
+*/
