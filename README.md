@@ -18,6 +18,6 @@ C Programming in easy steps 5e - Its kind of a paint by number coding book. It d
 
 read test read test read test ....etc
 
-```
+
 Doing the same for C++ in this repo. I created a folder cpp_folder that has my notes and sample code in it
-```
+
