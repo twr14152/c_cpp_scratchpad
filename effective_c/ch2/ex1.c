@@ -8,11 +8,11 @@ void increment(void) {
 	static unsigned int counter = 0;
 	current_count(counter);
 	counter++;
-	printf("incrementer value %d \t", counter);
+	printf("\tIncrementer value %d \t", counter);
 }
 
 void current_count(int a) {
-	printf("current counter value: %d \n", a);
+	printf("\nCurrent counter value: %d", a);
 }
 int main(void) {
 	for (int i = 0; i < 5; i++) {
@@ -23,12 +23,12 @@ int main(void) {
 }
 
 /*
-pi@RaspPi4:~/Coding/C_folder/effective_c/ch2 $ ./ex1
-current counter value: 0 
-incrementer value 1 	current counter value: 1 
-incrementer value 2 	current counter value: 2 
-incrementer value 3 	current counter value: 3 
-incrementer value 4 	current counter value: 4 
-incrementer value 5 	
+pi@RaspPi4:~/Coding/C_folder/effective_c/ch2 $ ./ex1 
+
+Current counter value: 0	Incrementer value 1 	
+Current counter value: 1	Incrementer value 2 	
+Current counter value: 2	Incrementer value 3 	
+Current counter value: 3	Incrementer value 4 	
+Current counter value: 4	Incrementer value 5 	
 pi@RaspPi4:~/Coding/C_folder/effective_c/ch2 $ 
 */
