@@ -4,7 +4,7 @@ This is a repository I'm using to learn C.
 A wasteland of code used only to aid in understanding how certain features work.
 
 Books used.
-- The C Programming Language 2e - tcpl
+- The C Programming Language 2e - TCPL
 - Introduction to C & GUI
 - C Programming in easy steps 5e  
 - Effective C 
