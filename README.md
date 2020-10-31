@@ -9,6 +9,7 @@ Books used.
 - C Programming in easy steps 5e  
 - Effective C 
 - How to think like a computer scientist - C Version (Think C)
+- Modern C
 
 Comments about books. 
 TCPL - is a good/great reference book if you are infront of the computer when reading it.
