@@ -34,12 +34,12 @@ Videos
  - C++ A General Purpose Language and Library
 
 Thoughts on reading material
-- How to Think Like a Computer Scientist: C++ Version, by Allen Downey - This guys my favorite technical author. His writing style is short chapters with clean and clear examples. The book very easy to read. It covers the basics of the language. You will need more but this is an easy and recommended starting point. This book is the C++ equivalent to Think Python.
-- C++ Primer 5th Edition easier reading that PPPuC++.
-- PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. 
-- A Tour of C++ 2nd Edition - This is a dense book and a slow read. No training wheels provided. My plan is to simply code out the examples and see what happens.
-- Sam Teach yourself C++ - pretty good sounding board for PPPuC++.
-- C++ in easy steps 5e - was a quick way to get back into this after some time off. Learned basic concepts using sample code. Good at showing the what and how, the why would be better learned from another book. You'll gain familiarity with syntax and basic concepts but your not going to build a 3D game with this book. Simple programs basic concepts. To get the most out of this you will want to code the examples out and then deviate from the sample code to see what it can do. 
-- Programming Abstractions in C++ has been the easiest read so far....(bare in mind I'm 10% the way through a 900+ Page book.
+- How to Think Like a Computer Scientist: C++ Version, by Allen Downey - This guys my favorite technical author. His writing style is short chapters with clean and clear examples. The book very easy to read. It covers the basics of the language. You will need more but this is an easy and recommended starting point. This book is the C++ equivalent to Think Python. (Recommend as a second book)
+- C++ Primer 5th Edition easier reading that PPPuC++. - still too damn long. (Have not finished)
+- PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. (Will not finish reading this book)
+- A Tour of C++ 2nd Edition - This is a dense book and a slow read. No training wheels provided. My plan is to simply code out the examples and see what happens. (will give this book another chance in the future. Too short not to)
+- Sam Teach yourself C++ - pretty good sounding board for PPPuC++. (started not finished)
+- C++ in easy steps 5e - was a quick way to get back into this after some time off. Learned basic concepts using sample code. Good at showing the what and how, the why would be better learned from another book. You'll gain familiarity with syntax and basic concepts but your not going to build a 3D game with this book. Simple programs basic concepts. To get the most out of this you will want to code the examples out and then deviate from the sample code to see what it can do. (Recommend as 1st book)
+- Programming Abstractions in C++ has been the easiest read so far....(Another monster book will probably never finish)
 
 This is definitely going to be a marathon vs a sprint. Just dont have the brain capacity to quickly digest any of this material. Slow and steady.
