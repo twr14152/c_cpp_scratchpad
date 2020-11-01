@@ -34,7 +34,7 @@ Videos
  - C++ A General Purpose Language and Library
 
 Thoughts on reading material
-- How to Think Like a Computer Scientist: C++ Version, by Allen Downey - This guys my favorite technical author. His writing style is short chapters with clean and clear examples. The book very easy to read. It covers the basics of the language. You will need more but this is an easy and recommended starting point. This book is the C++ equivalent to Think Python. (Recommend as a second book)
+- How to Think Like a Computer Scientist: C++ Version, by Allen Downey - This guys my favorite technical author. His writing style is short chapters with clean and clear examples. The book is very easy to read. It covers the basics of the language. You will need more but this is an easy and recommended starting point. This book is the C++ equivalent to Think Python. (Recommend as a second book)
 - C++ Primer 5th Edition easier reading that PPPuC++. - (Book is too damn long)
 - PPPuC++ - Its a good book, however its really thorough and very wordy. Per-Chapter breaks required to recharge. (this book has a hard time keeping my attention, will probably not finish)
 - A Tour of C++ 2nd Edition - This is a dense book and a slow read. No training wheels provided. My plan is to simply code out the examples and see what happens. (difficult read will revisit in future)
