@@ -18,7 +18,7 @@ I prefer a middle ground between reading and coding.
 
 C Programming in easy steps 5e - Its kind of a paint by number coding book. It does provide enough context to teach you the concepts. I worked through just about all of the examples in the book. I feel like I have a good grasp and could piece together some simple programs now. I do feel the what and how was covered more than the why. So like any book it served its purpose now on to the next.
 
-Think C - 
+Think C - This book is my ideal type of book. Easy one to two day read. Reinforced concepts learned from other books with out extraneous exceptions. Its a good book to start with. Approx 130 pages.
 
 My process is this.
 Read test, read test..etc..etc..
