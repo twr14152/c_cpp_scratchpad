@@ -22,7 +22,7 @@ Think C - This book is my ideal type of book. Easy one to two day read. Reinforc
 
 Effective C - I'm 3 chapters in so far and im losing interest. The writing style is not as direct or easy as the other books I've read. The added focus on security just makes the reading more challenging and dry. Will pause and revisit at a later date.
 
-Modern C - impulse buy as an add popped up in my screen. This book is available for free. The author released draft under creative commons license. Respect that so i dont feel too bad buying the book. Going switch gears for a bit and come back at a later date.
+Modern C - impulse buy as an ad popped up in my screen. This book is available for free. The author released draft under creative commons license. Respect that so i dont feel too bad buying the book. Going switch gears for a bit and come back at a later date.
 
 
 My process is this.
