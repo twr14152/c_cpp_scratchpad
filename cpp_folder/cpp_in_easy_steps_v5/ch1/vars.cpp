@@ -15,7 +15,7 @@ int main()
 	cout << "int number: " << number << endl;
 	cout << "float: " << floatDecimal << endl;
 	cout << "double: " << doubleDecimal << endl;
-	cout << "isTrue: " << isTrue << endl;
+	cout << "isTrue: " << isTrue << endl;  //always begin bool vars with "is"
 	cout << "isFalse: " << isFalse << endl;
 
 	return 0;
