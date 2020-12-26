@@ -1,4 +1,6 @@
 //C-style strings and user input
+//This style is not recommended as the safe guards can easily be over written
+//
 #include <iostream>
 #include <string.h>
 
