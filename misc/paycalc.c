@@ -1,9 +1,6 @@
 #include <stdio.h>
 
 
-float hours;
-float wage;
-float ot_wage;
 
 float wageCalc(float hours, float wage, float ot_wage);
 
@@ -45,9 +42,6 @@ double main() {
 	name3_ot = (name3_wage / 2.0) + name3_wage;
 	name4_ot = (name4_wage / 2.0) + name4_wage;
 	
-	printf("test %.2f\n", name1_ot);
-
-
 	name1 = wageCalc(name1_hrs, name1_wage, name1_ot);
 	name2 = wageCalc(name2_hrs, name2_wage, name2_ot);
 	name3 = wageCalc(name3_hrs, name3_wage, name3_ot);
@@ -85,3 +79,4 @@ float wageCalc(float hours, float wage, float ot_wage) {
 		return total_wage;
 	}
 }
+
