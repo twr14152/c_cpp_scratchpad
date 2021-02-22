@@ -9,7 +9,7 @@ float name2_wage = 20.0;
 float name3_wage = 20.0;
 float name4_wage = 19.0;
 
-ain't main() {
+int main() {
 	float name1_hrs;
 	float name2_hrs;
 	float name3_hrs;
