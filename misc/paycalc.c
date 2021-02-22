@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 float wageCalc(float hours, float wage, float ot_wage);
 
 float name1_wage = 21.0;
@@ -79,4 +77,3 @@ float wageCalc(float hours, float wage, float ot_wage) {
 		return total_wage;
 	}
 }
-
