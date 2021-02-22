@@ -2,10 +2,10 @@
 
 float wageCalc(float hours, float wage, float ot_wage);
 
-float name1_wage = 21.0;
-float name2_wage = 20.0;
-float name3_wage = 20.0;
-float name4_wage = 19.0;
+float name1_wage = <>;
+float name2_wage = <>;
+float name3_wage = <>;
+float name4_wage = <>;
 
 int main() {
 	float name1_hrs;
