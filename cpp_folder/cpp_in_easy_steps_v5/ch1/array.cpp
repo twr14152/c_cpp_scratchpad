@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-	double nums[3];
+	double nums[4];
 	nums[3] = 1.5;
 	nums[0] = 2.5;
 	nums[1] = 2.75;
