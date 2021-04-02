@@ -18,17 +18,19 @@ int main()
 	cout << "Text string: " << name << endl;
 	cout << "coords[0][2]: " << coords[0][2] << endl;
 	cout << "coords[1][2]: " << coords[1][2] << endl;
+  cout << "coords[2][3]: " << coords[2][3] << endl;
 
 	return 0;
 }
+
 /*
-pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps/ch1 $ ./array 
+ ./main 
 nums[0]: 2.5
 nums[1]: 2.75
 name[0]: T
 Text string: Todd
 coords[0][2]: 3
 coords[1][2]: 7
-Segmentation fault  <-- Not sure what the reason for this is
-pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps/ch1 $ 
+coords[2][3]: 12
+ 
 */
