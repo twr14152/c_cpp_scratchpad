@@ -8,10 +8,10 @@ int main()
 
  cout << "Integer division: " << (num/factor) << endl;
 
- result = (float)(num)/factor;
+ result = (float)(num)/factor; //old C style casting
  cout << "Cast division float: " << result << endl;
 
- num = static_cast<int>(letter);
+ num = static_cast<int>(letter); //new C++ casting
  cout << "Cast character int: " << num << endl;
 
  letter = static_cast<char>(70);
