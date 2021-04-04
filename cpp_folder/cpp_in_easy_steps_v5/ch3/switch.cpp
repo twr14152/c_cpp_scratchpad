@@ -33,8 +33,8 @@ int main()
 /*
  ./main
 Enter number 0-7 which day of the week is it (1 = Monday....7=Sunday):
-2
-Tuesday
+1
+Monday
  ./main
 Enter number 0-7 which day of the week is it (1 = Monday....7=Sunday):
 5
