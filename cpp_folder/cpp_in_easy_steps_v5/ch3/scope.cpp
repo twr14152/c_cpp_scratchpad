@@ -11,7 +11,10 @@ int main()
   cout << "fahrenheit " << bodyTempF() << endl;
   return 0;
 }
-
+//
+//Same variable name is used in each func. 
+//There is no conflict as they are in local scope of their own function
+//
 float bodyTempC()
 {
   float temperature = 37.0;
