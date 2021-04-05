@@ -3,13 +3,20 @@ using namespace std;
 
 int computeFactorials(int, int);
 int factorial(int);
-
-int main() {
+/*
+inline int factorial(int n)
+{
+	return (n==1)?1:(factorial(n - 1)*n);
+}
+*/
+int main() 
+{
 	computeFactorials(1, 8);
 	return 0;
 }
 
-int computeFactorials(int num, int max) {
+int computeFactorials(int num, int max) 
+{
 	cout << "Factorials of " << num << ":";
 	cout << factorial(num) << endl;
 	num++;
@@ -19,7 +26,8 @@ int computeFactorials(int num, int max) {
 		computeFactorials(num, max);
 }
 
-int factorial(int n) {
+int factorial(int n) 
+{
 	int result;
 	if (n == 1)
 		result = 1;
