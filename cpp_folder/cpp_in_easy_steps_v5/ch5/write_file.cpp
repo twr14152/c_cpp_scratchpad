@@ -9,6 +9,7 @@ int main()
 	router_config.append("no ip domain-name lookup\n");
 	router_config.append("ip ssh version 2\n");
 	router_config.append("username test password test\n");
+	//writer is an arbitrary obj name. Tested with the word balloon and it worked as well
 	ofstream writer("router_config.txt");
 	if (!writer)
 	{
