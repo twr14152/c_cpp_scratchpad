@@ -14,6 +14,8 @@ int main(void)
 
 
 /*
+arr and &arr[0] are the same thing as it pertains to pointers
+
 pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./ptr_arithmetic 
 The pointed to value is: 1.
 The pointed to value is: 2.
