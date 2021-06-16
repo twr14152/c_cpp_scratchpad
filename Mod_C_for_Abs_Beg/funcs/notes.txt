@@ -1,0 +1,62 @@
+Function declarations are usually held in header files (.h files)
+  - the compiler/linker will go out and find the function definition
+Function definitions are held in source files (.c files)
+  - func declaration can be inside another functions body
+  - function definitation cannot be inside another function
+  - they must be created in file scope
+  - User made functions must come before main() or be declared before main()
+  
+  void useMade(void)
+  {
+      printf("Test userMade()\n");
+  }
+  
+  int main(void)
+  {
+      username();
+  }
+  
+  
+  -or-
+  
+  void userMade(void);
+  
+  int main(void)
+  {
+      userMade();
+  }
+  
+  void userMade(void)
+  {
+      printf("Test userMade()\");
+  }
+  
+  
+------
+  
+Pass arguments by reference
+  
+#include <stdio.h>
+
+
+int multiplyby4(int *arg)
+{
+      return (*arg) * 4;
+}
+  
+int main(void)
+{
+      int num = 8;
+      int result;
+      result = multiplyby4(&num);
+      printf("The result of func multiplyby4() is %d\n", result);
+}
+
+
+/*
+pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./ptr_mult_by_4 
+The result of func multiplyby4() is 32
+pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $
+*/
+
+  
