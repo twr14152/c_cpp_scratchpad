@@ -1,4 +1,5 @@
-// Using typedef with struct is a more straight forward way of declaring a struct type var
+// Using typedef with struct is a more straight forward way of declaring a struct type variable
+// s is an example1 type
 
 #include <stdio.h>
 
