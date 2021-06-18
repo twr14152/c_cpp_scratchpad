@@ -1,3 +1,5 @@
+// Using typedef with struct is a more straight forward way of declaring a struct type var
+
 #include <stdio.h>
 
 typedef struct
