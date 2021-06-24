@@ -11,6 +11,7 @@ int main(void)
 }
 
 /*
+# Notice it only shows 1-9 the last char is \0
 pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./fgets_example 
 Enter string: 
 12345678910
