@@ -8,6 +8,7 @@ int main(void)
 	char str[10];
 	fgets(str, 10, stdin);
 	printf("string entered:%s\n", str);
+	//puts(str) easier way to print strings
 }
 
 /*
@@ -17,7 +18,7 @@ Enter string:
 12345678910
 string entered:123456789
 
-#Does not honor \n character
+#Does not honor \n character with in the string
 pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./fgets_example 
 Enter string: 
 123\n456\n789 
