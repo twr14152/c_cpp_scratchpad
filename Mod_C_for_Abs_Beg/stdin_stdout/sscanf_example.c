@@ -1,4 +1,4 @@
-//sscanf uses buffered data instead of data from a standard input
+//Reads from char array buffer instead of stdin
 
 #include <stdio.h>
 
