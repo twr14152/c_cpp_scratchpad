@@ -8,7 +8,6 @@ int main(void)
     fputs("You need to add newline char\n", stdout);
 	fputs("You need to specify which output stream to send data to\n", stdout);
 }
-
 /*
 pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./fputs_example 
 fputs() prints string the same as puts()
