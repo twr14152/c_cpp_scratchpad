@@ -6,7 +6,7 @@ int main(void)
 {
 	char str[] = "Sample string";
 	puts("Puts() is recommended to print strings");
-  puts("Puts() automatically adds '/nl' character");
+  	puts("Puts() automatically adds '/nl' character");
 	puts("That is when string operators arent needed");
 	puts("");
 	puts(str);
