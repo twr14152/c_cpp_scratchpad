@@ -1,5 +1,6 @@
 //fgets is the recommended method for getting string data
-//
+//It will accept all string data until you hit enter
+
 #include <stdio.h>
 
 int main(void)
@@ -18,7 +19,7 @@ Enter string:
 12345678910
 string entered:123456789
 
-#Does not honor \n character with in the string
+#Does not honor '\n' character within the string only the one entered by pressing <cr>
 pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./fgets_example 
 Enter string: 
 123\n456\n789 
