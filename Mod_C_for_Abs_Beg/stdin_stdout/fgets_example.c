@@ -1,6 +1,6 @@
 //fgets() is the recommended method for getting string data
 //It will accept all string data until you hit enter
-//provides safety from buffer overruns that you can get with sscanf
+//provides safety from buffer overruns that you can get with scanf
 
 #include <stdio.h>
 
