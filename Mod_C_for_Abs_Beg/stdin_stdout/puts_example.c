@@ -6,17 +6,18 @@ int main(void)
 {
 	char str[] = "Sample string";
 	puts("Puts() is recommended to print strings");
-  	puts("Puts() automatically adds '/nl' character");
 	puts("That is when string operators arent needed");
+	puts("Puts() automatically adds '/nl' character");
 	puts("");
 	puts(str);
 }
 
 /*
+pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./puts_example 
 Puts() is recommended to print strings
-Puts() automatically adds '/nl' character
 That is when string operators arent needed
+Puts() automatically adds '/nl' character
 
 Sample string
-
+pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ 
 */
