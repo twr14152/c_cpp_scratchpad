@@ -1,3 +1,6 @@
+//%s with pointer will reference entire string
+//%c with pointer will reference 1st character
+
 include <stdio.h>
 
 int main(void)
