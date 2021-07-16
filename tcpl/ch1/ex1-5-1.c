@@ -2,6 +2,8 @@
 
 int main(void)
 {
+	//int is used with getchar() so it can hold any and all chars + the value for EOF
+	//EOF is an int value defined in stdio.h
 	int c;
 	//getchar() reads one character at a time
 	c = getchar();
