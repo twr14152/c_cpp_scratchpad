@@ -3,8 +3,10 @@
 int main(void)
 {
 	int c;
+	//getchar() reads one character at a time
 	c = getchar();
 	while (c != EOF) {
+		//putchar() writes one character at a time
 		putchar(c);
 		c = getchar();
 	}
