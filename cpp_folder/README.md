@@ -26,6 +26,7 @@ Reading list
 - Sams Teach yourself C++ 8th edition
 - C++ Programming in easy steps 5th Edition
 - Programming Abstractions in C++
+- Modern C++ for Absolute Beginners
 
 Website
 - learncpp.com
@@ -41,5 +42,6 @@ Thoughts on reading material
 - Sam Teach yourself C++ - pretty good sounding board for PPPuC++. (started not finished)
 - C++ in easy steps 5e - was a quick way to get back into this after some time off. Learned basic concepts using sample code. Good at showing the what and how, the why would be better learned from another book. You'll gain familiarity with syntax and basic concepts but your not going to build a 3D game with this book. Simple programs basic concepts. To get the most out of this you will want to code the examples out and then deviate from the sample code to see what it can do. (Recommend as 1st book)
 - Programming Abstractions in C++ has been the easiest read so far....(Another monster book will probably never finish)
+- Modern C++ for Absolute Beginners by Slobodan Dmitrovic - This book is ideal for me and the amount of time I have to dedicate to the topic. The chapters are short with complete code samples. It leaves out a lot of the unneccessary verbiage that comes with a lot of beginner books. Not being a complete novice to the subject I feel like this and his other book on C were great additions to my library.
 
 This is definitely going to be a marathon vs a sprint. Just dont have the brain capacity to quickly digest any of this material. Slow and steady.
