@@ -27,7 +27,7 @@ I prefer a middle ground between reading and coding. Add to list of books will p
 
 - Modern C - impulse buy as an ad popped up in my screen. This book is available for free. The author released draft under creative commons license. Respect that so i dont feel too bad buying the book. Going switch gears for a bit and come back at a later date.(Undecided)
 
-- Modern C for Absolute Beginners by Slobodan Dmitrovic- A really good book to get back into C after sometime away. The chapters are really easy to digest with complete code samples. The book is about ideal for my schedule and time I have to allocate to this.
+- Modern C for Absolute Beginners by Slobodan Dmitrovic- A really good book to get back into C after sometime away. The chapters are really easy to digest with complete code samples. The book is about ideal for my schedule and the time I have to allocate to this.
 
 
 My process is this.
