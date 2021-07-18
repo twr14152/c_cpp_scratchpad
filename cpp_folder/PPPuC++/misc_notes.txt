@@ -20,7 +20,7 @@ void testfunc(int n)
  
 constexpr should be used with an expression if the value of n is known at compile time.
  
- #define int MAX = 300;
+#define int MAX = 300;
  
 void testfunc(int n)
 {
