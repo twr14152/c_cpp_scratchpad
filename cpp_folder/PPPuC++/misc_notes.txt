@@ -4,3 +4,28 @@ switch vs if/else
 - The switch logic will only work with values such as int, char, and enumerations. Not Strings...
 - case statement must end with break.
 - Must use if/else logic to compare strings values or maps.
+
+---
+constexpr vs const:
+
+
+const should be used with an expression when the value of n is not known at compile time.
+
+void testfunc(int n) 
+{
+  const int x = n + 7;
+  cout << x << endl;
+}
+ 
+ 
+constexpr should be used with an expression if the value of n is known at compile time.
+ 
+ #define int MAX = 300;
+ 
+void testfunc(int n)
+{
+    constexpr int b = max + 7
+    cout << b << endl;
+}
+
+---
