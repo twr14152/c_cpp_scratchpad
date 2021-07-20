@@ -24,7 +24,7 @@ int main()
 			cout << "yep" << endl;
 			break;
 		case 't': 
-			cout << "It worked! 't' is raw char in case.." << endl;
+			cout << "It worked! 't' is simple char used as a case.." << endl;
 			break;
 	}
 }
@@ -40,6 +40,6 @@ Bullshit... It is too!
 pi@RaspPi4:~/Coding/CPP_folder/PPPuCPP $ ./switch_comparison 
 Is fire hot?
 t
-It worked! 't' is raw char in case..
+It worked! 't' is simple char used as a case..
 pi@RaspPi4:~/Coding/CPP_folder/PPPuCPP $ 
 */
