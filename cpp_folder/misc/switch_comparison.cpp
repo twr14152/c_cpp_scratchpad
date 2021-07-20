@@ -1,3 +1,6 @@
+// switch will match char, int, enum
+// case statements must be constant expressions, NOT variables....
+
 #include <iostream>
 
 int main()
@@ -20,7 +23,7 @@ int main()
 		case y:
 			cout << "yep" << endl;
 			break;
-		case 't':
+		case 't': 
 			cout << "It worked! 't' is raw char in case.." << endl;
 			break;
 	}
