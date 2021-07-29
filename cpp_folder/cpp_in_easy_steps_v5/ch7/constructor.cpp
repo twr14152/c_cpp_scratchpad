@@ -1,5 +1,6 @@
 // Create an Object
-// access specifiers { private = default, public, protected }
+// Access specifiers { private = default, public, protected }
+// Constructor is a member function with the same name as the class
 //
 #include <iostream>
 #include <string>
