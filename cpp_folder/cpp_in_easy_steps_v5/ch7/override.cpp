@@ -29,9 +29,11 @@ int main()
 	enrique.Man::speak("Que pasa mi amigo?");
 	return 0;
 }
+/*
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ ./override 
 Hello!
 (Base Class) I wonder which method will be used ???
 (child class)Hola!
 (Base Class) Que pasa mi amigo?
 pi@RaspPi4:~/Coding/CPP_folder/in_easy_steps $ 
+*/
