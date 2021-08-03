@@ -1,3 +1,6 @@
+//Default copy constructor does not correctly copy (pointers or arrays) all types.
+//Therefore you need to create your own custom copy constructor (user defined copy constructor)
+
 #include <iostream>
 
 class Class1
