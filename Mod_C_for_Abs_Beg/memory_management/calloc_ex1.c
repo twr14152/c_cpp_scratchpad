@@ -1,4 +1,5 @@
 // Allocate multiple objects (memory space) and initalize them to all zeros
+// calloc(number_of_objects, size_of_objects)
 
 #include <stdio.h>
 #include <stdlib.h>
