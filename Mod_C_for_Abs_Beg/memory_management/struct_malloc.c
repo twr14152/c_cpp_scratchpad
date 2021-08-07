@@ -24,10 +24,10 @@ int main(void)
 }
 
 /*
-toddriemenschneider@Todds-MBP-2 ModC4AbsBeg % gcc -std=c2x allocate_mem_struct.c -o allocate_mem_struct 
-toddriemenschneider@Todds-MBP-2 ModC4AbsBeg % ./allocate_mem_struct 
+toddriemenschneider@Todds-MBP-2 ModC4AbsBeg % gcc -std=c2x struct_malloc.c -o struct_malloc 
+toddriemenschneider@Todds-MBP-2 ModC4AbsBeg % ./struct_malloc 
 The value is: A
 The value is: 123
 The valie is: 456.789000
-toddriemenschneider@Todds-MBP-2 ModC4AbsBeg %
+toddriemenschneider@Todds-MBP-2 ModC4AbsBeg % 
 */
