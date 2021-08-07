@@ -1,3 +1,5 @@
+// Allocate multiple objects (memory space) and initalize them to all zeros
+
 #include <stdio.h>
 #include <stdlib.h>
 
