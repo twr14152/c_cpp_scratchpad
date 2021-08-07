@@ -7,13 +7,25 @@
 int main(void)
 {
 	int* p = malloc(sizeof(int));
-	printf("Allocated %zu bytes.\n", sizeof(*p));
+	if (p)
+	{
+		printf("Allocated %zu bytes.\n", sizeof(*p));
+	}
 	printf("Resizing allocated memory..\n");
 	int* pnew = realloc(p, 10 * sizeof(int));
-	printf("The memory block is now %zu bytes long. \n", 10 * sizeof(int));
+	if (pnew)
+	{
+		printf("The memory block is now %zu bytes long. \n", 10 * sizeof(int));
+		free(pnew);
+	}
+	else
+	{
+		puts("allocating pnew failed");
+		free(p);
+	}
 }
 /*
-toddriemenschneider@Todds-MBP-2 ModC4AbsBeg % ./reallocate_ex1
+toddriemenschneider@Todds-MBP-2 ModC4AbsBeg % ./reallocate_ex1                               
 Allocated 4 bytes.
 Resizing allocated memory..
 The memory block is now 40 bytes long. 
