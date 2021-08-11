@@ -1,0 +1,20 @@
+String creation and reassignment.
+
+char word[20] = "blue";
+
+cannot reassign like this:
+
+word = "red"; // wont work
+
+either do it one char at a time like this:
+
+word[0] = 'r';
+word[1] = 'e';
+word[2] = 'd';
+word[3] = '\0';
+
+or using strcpy like this:
+
+#include <string.h>
+
+strcpy(word, "red"); // it adds '\0' automatically
