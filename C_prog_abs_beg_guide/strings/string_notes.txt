@@ -19,5 +19,5 @@ or using strcpy like this:
 
 strcpy(word, "red"); // it adds '\0' automatically
 
-char arrays[] and pointers do not need to be dereferenced to print value
+char str[] and pointers do not need to be dereferenced to print value
 
