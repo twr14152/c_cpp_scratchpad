@@ -18,3 +18,5 @@ or using strcpy like this:
 #include <string.h>
 
 strcpy(word, "red"); // it adds '\0' automatically
+
+char arrays[] and pointers do not need to be dereferenced to print value
