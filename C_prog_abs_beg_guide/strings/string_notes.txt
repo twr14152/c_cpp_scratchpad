@@ -21,3 +21,6 @@ strcpy(word, "red"); // it adds '\0' automatically
 
 char str[] and pointers do not need to be dereferenced to print value
 
+strlen() does not include '\0' in count
+sizeof() does include '\0' in count
+
