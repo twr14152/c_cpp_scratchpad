@@ -12,7 +12,7 @@ int main()
 	cout << "value of x and y are : " << x << " " << y << endl;
 
 	int s = 456;
-	const int& t = s;
+	const int& t = s; //creates a read-only reference
 
 	s = 789; // this works
 	cout << "value of s and t are : " << s << " " << t << endl;
