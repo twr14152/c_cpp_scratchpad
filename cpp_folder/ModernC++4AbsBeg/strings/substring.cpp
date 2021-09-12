@@ -4,6 +4,7 @@
 int main() 
 {
 	std::string s = "Hello World.";
+	//var.substr(starting_char, length)
 	std::string mysubstring = s.substr(6, 5);
 	std::cout << "The substring value is: " << mysubstring <<'\n';
 }
