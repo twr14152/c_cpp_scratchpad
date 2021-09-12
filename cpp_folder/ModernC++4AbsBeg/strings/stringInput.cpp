@@ -1,3 +1,7 @@
+//std::getline(std::cin, target_variable) 
+//Use getline because strings contain white space. 
+//std::cin good for ints doubles and chars
+
 #include <iostream>
 #include <string>
 
