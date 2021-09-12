@@ -5,7 +5,7 @@ int main()
 {
 	std::string s;
 	std::cout << "Enter a string: ";
-	std::getline(std::cin, s); //preferred method of input
+	std::getline(std::cin, s); //preferred method of input for strings
 	std::cout << "You entered: " << s << '\n';
 	return 0;
 }
