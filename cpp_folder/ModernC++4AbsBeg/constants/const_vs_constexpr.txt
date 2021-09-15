@@ -1,2 +1,5 @@
 const - variable not known at compile time. Once initialized do not change.
 constexpr - symbolic constant that is given a value that is known at compile time.
+
+
+
