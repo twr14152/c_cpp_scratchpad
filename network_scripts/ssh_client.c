@@ -4,14 +4,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*
-CSR1000v Host: sandbox-iosxe-latest-1.cisco.com
-SSH Port: 22
-NETCONF Port: 830
-RESTCONF Ports: 443 (HTTPS)
-Username: developer
-Password: C1sco12345
-*/
 
 int show_remote_processes(ssh_session session)
 {
