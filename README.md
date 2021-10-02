@@ -30,7 +30,7 @@ I prefer a middle ground between reading and coding. Add to list of books will p
 
 - Modern C for Absolute Beginners by Slobodan Dmitrovic- A really good book to get back into C after sometime away. The chapters are really easy to digest with complete code samples. The book is about ideal for my schedule and the time I have to allocate to this.
 
-- C Programming Abs beg guide 3rd edt. - read so far really good.
+- C Programming Abs beg guide 3rd edt. - This is a really good book. 
 
 
 My process is this.
