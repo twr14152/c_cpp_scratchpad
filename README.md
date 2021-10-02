@@ -16,7 +16,7 @@ Books used.
 Comments about books.
 - Learn to Code with C by Simon Long - Best book to start with. Very easy quick read. Does not cover everything but enough to get you started. The book is about 90 pages.
 
-- C Programming in easy steps 5e - Its kind of a paint by number coding book. It does provide enough context to teach you the concepts. I worked through just about all of the examples in the book. I feel like I have a good grasp and could piece together some simple programs now. I do feel the what and how was covered more than the why. So like any book it served its purpose now on to the next. This is a good book to start with. Took about 2 weeks to work through coding out all the examples. There's a lot there to digest, more than the words on the page. You learn a lot by tweaking the examples to see what happens. (2nd)
+- C Programming in easy steps 5e - Its kind of a paint by number coding book. It does provide enough context to teach you the concepts. I worked through just about all of the examples in the book. I feel like I have a good grasp and could piece together some simple programs now. I do feel the what and how was covered more than the why. So like any book it served its purpose now on to the next. This is a good book to start with. Took about 2 weeks to work through coding out all the examples. There's a lot there to digest, more than the words on the page. You learn a lot by tweaking the examples to see what happens.
 
 - Think C - This book is my ideal type of book. Easy one to two day read. Reinforced concepts learned from other books with out extraneous exceptions. Its a good second book. More of an easy read less coding involved, but do recommend testing out some some of the examples. Approx 130 pages. 
 
