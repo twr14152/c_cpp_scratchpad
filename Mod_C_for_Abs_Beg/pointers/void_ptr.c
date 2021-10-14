@@ -14,16 +14,22 @@ int main(void)
 	v_ptr = ip;
 	// Any of these print statments work
 	// preference on how you write it is up to you
-	printf("The pointed to valuse is: %d\n", *((int *)v_ptr));
-	printf("The pointed to valuse is: %d\n", (*(int *)v_ptr));
-	printf("The pointed to valuse is: %d\n", *(int *)v_ptr);
+	printf("The value x = %d\n", x);
+        printf("The value *ip = %d\n", *ip);
+	printf("The value *v_ptr = %d\n", *( int* )v_ptr);
+	printf("The pointed to value is: %d\n", *((int *)v_ptr));
+	printf("The pointed to value is: %d\n", (*(int *)v_ptr));
+	printf("The pointed to value is: %d\n", *(int *)v_ptr);
 	
 }
 
 /*
 pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $ ./void_ptr
-The pointed to valuse is: 47
-The pointed to valuse is: 47
-The pointed to valuse is: 47
+The value x = 47
+The value *ip = 47
+The value *v_ptr = 47
+The pointed to value is: 47
+The pointed to value is: 47
+The pointed to value is: 47
 pi@RaspPi4:~/Coding/C_folder/Modern_C_Absolute_beg $
 */
