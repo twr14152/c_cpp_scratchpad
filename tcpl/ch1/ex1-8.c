@@ -2,36 +2,30 @@
 
 int main(void)
 {
-	int c, blanks, nl, tabs;
-	blanks = 0;
-	nl = 0;
-	tabs = 0;
-
-	while(1)
-	{	
-		c = getchar();
-			if (c =='\n')
-				++nl;
-			if (c =='\t')
-				++tabs;
-			if (c == ' ')
-				++blanks;
-			if (c == 'q')
-				break;
-	}
-	printf("Blanks = %d\nnl = %d\ntabs = %d\n", blanks, nl, tabs);
+  int c = 0;
+  int s = 0;
+  int t = 0;
+  int nl = 0;
+  
+  while ((c = getchar())!= EOF) {
+    if (c == '\n')
+      ++nl;
+    else if (c == '\t')
+      ++t;
+    else if (c == ' ')
+      ++s;
+    else
+      continue;
+  }
+  printf("Number of tabs %d\n", t);
+  printf("Number of blanks %d\n", s);
+  printf("Number of newlines %d\n", nl);
+  return 0;
 }
-/*			
-pi@RaspPi4:~/Coding/C_folder/TCPL/ch1 $ ./ex1-8
-1
-2
-3
- 
-	
-7
-q
-Blanks = 1
-nl = 6
-tabs = 1
-pi@RaspPi4:~/Coding/C_folder/TCPL/ch1 $ 
-*/
+
+/*
+pi@RaspPi4:~/Coding/C_folder/TCPL/ch1 $ ./ex1-8 < test
+Number of tabs 3
+Number of blanks 3
+Number of newlines 6
+pi@RaspPi4:~/Coding/C_folder/TCPL/ch1 $
