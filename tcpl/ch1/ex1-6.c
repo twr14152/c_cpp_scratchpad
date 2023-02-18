@@ -8,3 +8,9 @@ int main(void)
 	printf("%d is EOF\n", c);
 }
 
+/*
+1 
+1 
+1 
+0 is EOF
+*/
