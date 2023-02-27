@@ -1,3 +1,7 @@
 constexpr - values must be known by compile time.
 
+constexpr int max = 100;
+
 const - is initialized with a value that is not known by compile time and will not change after asssigned.
+
+const int c2 = n + 7;
