@@ -1,0 +1,3 @@
+constexpr - values must be known by compile time.
+
+const - is initialized with a value that is not known by compile time and will not change after asssigned.
