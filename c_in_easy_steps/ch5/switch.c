@@ -21,3 +21,8 @@ int main(void)
     default: printf("letter is unrecognized\n");
   }
 }
+/*
+pi@RaspPi4:~/Coding/C_folder/TCPL/ch2 $ ./switch
+Number is two
+letter is b
+*/
