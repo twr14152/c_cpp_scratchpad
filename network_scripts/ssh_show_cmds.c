@@ -5,7 +5,7 @@
 
 int main(int argc , char **cmds) {
 
-    for (int i = 1 ; i < argc; i++ ) {
+    for (int i = 2 ; i < argc; i++ ) {
     
     printf("\nCommand: %s\n", cmds[i]);
     
@@ -21,8 +21,8 @@ int main(int argc , char **cmds) {
     }
 
     // Set SSH options
-    ssh_options_set(session, SSH_OPTIONS_HOST, "r1");
-    ssh_options_set(session, SSH_OPTIONS_USER, "cisco");
+    ssh_options_set(session, SSH_OPTIONS_HOST, cmds[1]);
+    ssh_options_set(session, SSH_OPTIONS_USER, "#####");
 
     // Connect to SSH server
     rc = ssh_connect(session);
@@ -33,7 +33,7 @@ int main(int argc , char **cmds) {
     }
 
     // Authenticate with password
-    rc = ssh_userauth_password(session, NULL, "cisco");
+    rc = ssh_userauth_password(session, NULL, "#####");
     if (rc != SSH_AUTH_SUCCESS) {
         fprintf(stderr, "Error authenticating with password: %s\n", ssh_get_error(session));
         ssh_disconnect(session);
@@ -92,47 +92,79 @@ int main(int argc , char **cmds) {
     printf("\n\n");
     return 0;
 }
-/*
-(netops) todd@LinuxMint:~/Coding$ ./a.out "show ip route" "show ip int brief | inc Loopback0"
+'''
+pi@rasp4:~/Coding/c_folder/misc $ ./ssh_show_cmds "sbx-nxos-mgmt.cisco.com" "show ip int brief" "show version"
 
-Command: show ip route
-Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
-       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
-       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
-       E1 - OSPF external type 1, E2 - OSPF external type 2
-       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
-       ia - IS-IS inter area, * - candidate default, U - per-user static route
-       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
-       + - replicated route, % - next hop override
+Command: show ip int brief
 
-Gateway of last resort is not set
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Vlan11               192.168.11.1    protocol-down/link-down/admin-down 
+Vlan12               192.168.12.1    protocol-down/link-down/admin-down 
+Vlan13               192.168.14.1    protocol-down/link-down/admin-down 
+Vlan14               192.168.90.1    protocol-down/link-down/admin-up   
+Vlan16               192.168.89.23   protocol-down/link-down/admin-up   
+Vlan25               10.222.249.25   protocol-down/link-down/admin-up   
+Vlan50               172.16.1.111    protocol-down/link-down/admin-down 
+Vlan77               172.16.1.10     protocol-down/link-down/admin-up   
+Vlan88               10.88.88.88     protocol-down/link-down/admin-down 
+Vlan89               10.100.100.89   protocol-down/link-down/admin-down 
+Vlan100              10.0.0.101      protocol-down/link-down/admin-down 
+Vlan112              10.72.240.13    protocol-down/link-down/admin-down 
+Vlan113              10.73.148.13    protocol-down/link-down/admin-down 
+Vlan121              10.0.0.1        protocol-down/link-down/admin-up   
+Vlan204              10.204.204.66   protocol-down/link-down/admin-up   
+Vlan3333             10.1.1.2        protocol-down/link-down/admin-down 
+Vlan3912             1.1.1.1         protocol-down/link-down/admin-down 
+Lo0                  1.1.1.1         protocol-down/link-down/admin-down 
+Lo11                 10.0.0.11       protocol-up/link-up/admin-up       
+Lo98                 10.98.98.1      protocol-up/link-up/admin-up       
+Lo99                 10.99.99.1      protocol-up/link-up/admin-up       
+Lo618                159.99.89.99    protocol-up/link-up/admin-up       
+Lo648                159.99.99.99    protocol-up/link-up/admin-up       
+Lo1001               1.1.1.1         protocol-up/link-up/admin-up       
+Eth1/9               1.1.1.1         protocol-down/link-down/admin-down 
 
-      5.0.0.0/32 is subnetted, 1 subnets
-B        5.5.5.5 [20/0] via 169.169.169.1, 1d10h
-      6.0.0.0/32 is subnetted, 1 subnets
-O E1     6.6.6.6 [110/65] via 157.130.0.1, 1d10h, Serial2/0
-      10.0.0.0/8 is variably subnetted, 7 subnets, 2 masks
-C        10.0.1.0/24 is directly connected, FastEthernet0/0
-L        10.0.1.1/32 is directly connected, FastEthernet0/0
-O IA     10.0.2.0/24 [110/65] via 157.130.0.1, 1d10h, Serial2/0
-O IA     10.0.3.0/24 [110/65] via 157.130.0.3, 1d10h, Serial2/1
-C        10.255.255.1/32 is directly connected, Loopback0
-O E2     10.255.255.2/32 [110/20] via 157.130.0.1, 1d10h, Serial2/0
-O E2     10.255.255.3/32 [110/20] via 157.130.0.3, 1d10h, Serial2/1
-      157.130.0.0/16 is variably subnetted, 6 subnets, 2 masks
-C        157.130.0.0/31 is directly connected, Serial2/0
-L        157.130.0.0/32 is directly connected, Serial2/0
-C        157.130.0.1/32 is directly connected, Serial2/0
-C        157.130.0.2/31 is directly connected, Serial2/1
-L        157.130.0.2/32 is directly connected, Serial2/1
-O        157.130.0.4/31 [110/128] via 157.130.0.3, 1d10h, Serial2/1
-                        [110/128] via 157.130.0.1, 1d10h, Serial2/0
-      169.169.0.0/16 is variably subnetted, 3 subnets, 2 masks
-C        169.169.169.0/30 is directly connected, POS3/0
-L        169.169.169.2/32 is directly connected, POS3/0
-O E2     169.169.169.4/30 [110/20] via 157.130.0.1, 1d10h, Serial2/0
-Command: show ip int brief | inc Loopback0
-Loopback0              10.255.255.1    YES NVRAM  up                    up      
+Command: show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2023, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
 
-(netops) todd@LinuxMint:~/Coding
-*/
+Nexus 9000v is a demo version of the Nexus Operating System
+
+Software
+  BIOS: version 
+  NXOS: version 10.3(3) [Feature Release]
+  BIOS compile time:  
+  NXOS image file is: bootflash:///nxos64-cs.10.3.3.F.bin
+  NXOS compile time:  4/30/2023 12:00:00 [05/03/2023 20:18:42]
+
+Hardware
+  cisco Nexus9000 C9300v Chassis 
+  Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz with 16384716 kB of memory.
+  Processor Board ID 9K1C72YEFLR
+  Device name: Nexus
+  bootflash:    4287040 kB
+
+Kernel uptime is 32 day(s), 6 hour(s), 31 minute(s), 47 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+	
+
+
+pi@rasp4:~/Coding/c_folder/misc $ 
+'''
