@@ -1,135 +1,167 @@
-// One command ssh script based off sshlib tutorial...
-
-#include <libssh/libssh.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <libssh/libssh.h>
 
 
-int show_remote_processes(ssh_session session)
-{
-  ssh_channel channel;
-  int rc;
-  printf("Enter commands to run: ");
-  char buffer[256];
-  fgets(buffer, 256, stdin);
-  int nbytes;
- 
-  channel = ssh_channel_new(session);
-  if (channel == NULL)
-    return SSH_ERROR;
- 
-  rc = ssh_channel_open_session(channel);
-  if (rc != SSH_OK)
-  {
-    ssh_channel_free(channel);
-    return rc;
-  }
- 
-  rc = ssh_channel_request_exec(channel, buffer);
-  if (rc != SSH_OK)
-  {
-    ssh_channel_close(channel);
-    ssh_channel_free(channel);
-    return rc;
-  }
- 
-  nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0);
-  while (nbytes > 0)
-  {
-    if (write(1, buffer, nbytes) != (unsigned int) nbytes)
-    {
-      ssh_channel_close(channel);
-      ssh_channel_free(channel);
-      return SSH_ERROR;
+int verbosity = SSH_LOG_PROTOCOL;
+
+int main(int argc , char *argv[]) {
+      
+    // Initialize SSH variables
+    ssh_session session;
+    int rc;
+
+    // Create SSH session
+    session = ssh_new();
+    if (session == NULL) {
+        fprintf(stderr, "Error creating SSH session\n");
+        exit(EXIT_FAILURE);
     }
-    nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0);
-  }
- 
-  if (nbytes < 0)
-  {
+
+    // Set SSH options
+    //ssh_options_set(session, SSH_OPTIONS_LOG_VERBOSITY, &verbosity);
+    ssh_options_set(session, SSH_OPTIONS_HOST, argv[1]);
+    ssh_options_set(session, SSH_OPTIONS_USER, "###");
+
+    // Connect to SSH server
+    rc = ssh_connect(session);
+    if (rc != SSH_OK) {
+        fprintf(stderr, "Error connecting to SSH server: %s\n", ssh_get_error(session));
+        ssh_free(session);
+        exit(EXIT_FAILURE);
+    }
+
+    // Authenticate with password
+    rc = ssh_userauth_password(session, NULL, "###");
+    if (rc != SSH_AUTH_SUCCESS) {
+        fprintf(stderr, "Error authenticating with password: %s\n", ssh_get_error(session));
+        ssh_disconnect(session);
+        ssh_free(session);
+        exit(EXIT_FAILURE);
+    }
+
+    // Open channel for executing command
+    ssh_channel channel;
+    channel = ssh_channel_new(session);
+    if (channel == NULL) {
+        fprintf(stderr, "Error creating SSH channel\n");
+        ssh_disconnect(session);
+        ssh_free(session);
+        exit(EXIT_FAILURE);
+    }
+
+    // Execute command
+    rc = ssh_channel_open_session(channel);
+    if (rc != SSH_OK) {
+        fprintf(stderr, "Error opening SSH channel: %s\n", ssh_get_error(session));
+        ssh_channel_free(channel);
+        ssh_disconnect(session);
+        ssh_free(session);
+        exit(EXIT_FAILURE);
+    }
+    
+    printf("\nCommand: %s\n", argv[2]);    
+    rc = ssh_channel_request_exec(channel, argv[2]);
+    if (rc != SSH_OK) {
+	    fprintf(stderr, "Error executing command: %s\n", ssh_get_error(session));
+            ssh_channel_close(channel);
+            ssh_channel_free(channel);
+            ssh_disconnect(session);
+            ssh_free(session);
+            exit(EXIT_FAILURE);
+    }
+
+
+    // Read command output
+    char buffer[256];
+    int nbytes;
+    while ((nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0)) > 0) {
+        fwrite(buffer, 1, nbytes, stdout);
+    }
+
+    // Close channel
+    ssh_channel_send_eof(channel);
     ssh_channel_close(channel);
     ssh_channel_free(channel);
-    return SSH_ERROR;
-  }
- 
-  ssh_channel_send_eof(channel);
-  ssh_channel_close(channel);
-  ssh_channel_free(channel);
- 
-  return SSH_OK;
+    // Disconnect and free SSH session
+    ssh_disconnect(session);
+    ssh_free(session);
+    printf("\n\n");
+    return 0;
 }
-
-int main(void)
-{
-  ssh_session my_ssh_session;
-  int rc;
-  //Log in creds
-  char *password;
-  char* host = "sandbox-iosxe-latest-1.cisco.com";
-  int port = 22;
-  char* uname =  "developer";
-  int verbosity = SSH_LOG_PROTOCOL; 
-
-  // Open session and set options
-  my_ssh_session = ssh_new();
-  if (my_ssh_session == NULL)
-    exit(-1);
-  ssh_options_set(my_ssh_session, SSH_OPTIONS_HOST, host);
-  ssh_options_set(my_ssh_session, SSH_OPTIONS_PORT, &port);
-  ssh_options_set(my_ssh_session, SSH_OPTIONS_USER, uname); 
-  
-  // Uncomment to debug session
-  //ssh_options_set(my_ssh_session, SSH_OPTIONS_LOG_VERBOSITY, &verbosity);
-  
-  // Connect to server
-  rc = ssh_connect(my_ssh_session);
-  if (rc != SSH_OK)
-  {
-    fprintf(stderr, "Error connecting to localhost: %s\n",
-            ssh_get_error(my_ssh_session));
-    ssh_free(my_ssh_session);
-    exit(-1);
-  }
- 
-  // Authenticate ourselves
-  password = getpass("Password: ");
-  rc = ssh_userauth_password(my_ssh_session, NULL, password);
-  if (rc != SSH_AUTH_SUCCESS)
-  {
-    fprintf(stderr, "Error authenticating with password: %s\n",
-            ssh_get_error(my_ssh_session));
-    ssh_disconnect(my_ssh_session);
-    ssh_free(my_ssh_session);
-    exit(-1);
-  }
-  //...
-  show_remote_processes(my_ssh_session);
-  ssh_disconnect(my_ssh_session);
-  ssh_free(my_ssh_session);
-  printf("\n");
-  return 0;
-}
-
 /*
-pi@RaspPi4:~/Coding/C_folder/misc/ssh_stuff $ ./ssh_client 
-Password: 
-Enter commands to run: show ip interface brief
+pi@rasp4:~/Coding/c_folder/misc/network_stuff $ ./ssh_client "sbx-nxos-mgmt.cisco.com" "show ip int brief ; show version"
 
-Welcome to the DevNet Sandbox for CSR1000v and IOS XE
- 
-The following programmability features are already enabled:
-  - NETCONF
-  - RESTCONF
- 
-Thanks for stopping by.
+Command: show ip int brief ; show version
+
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Vlan11               192.168.11.1    protocol-down/link-down/admin-down 
+Vlan12               192.168.12.1    protocol-down/link-down/admin-down 
+Vlan13               192.168.14.1    protocol-down/link-down/admin-down 
+Vlan14               192.168.90.1    protocol-down/link-down/admin-up   
+Vlan16               192.168.89.23   protocol-down/link-down/admin-up   
+Vlan25               10.222.249.25   protocol-down/link-down/admin-up   
+Vlan50               172.16.1.111    protocol-down/link-down/admin-down 
+Vlan77               172.16.1.10     protocol-down/link-down/admin-up   
+Vlan88               10.88.88.88     protocol-down/link-down/admin-down 
+Vlan89               10.100.100.89   protocol-down/link-down/admin-down 
+Vlan100              10.0.0.101      protocol-down/link-down/admin-down 
+Vlan112              10.72.240.13    protocol-down/link-down/admin-down 
+Vlan113              10.73.148.13    protocol-down/link-down/admin-down 
+Vlan121              10.0.0.1        protocol-down/link-down/admin-up   
+Vlan204              10.204.204.66   protocol-down/link-down/admin-up   
+Vlan3333             10.1.1.2        protocol-down/link-down/admin-down 
+Vlan3912             1.1.1.1         protocol-down/link-down/admin-down 
+Lo0                  1.1.1.1         protocol-down/link-down/admin-down 
+Lo11                 10.0.0.11       protocol-down/link-down/admin-down 
+Lo55                 55.55.55.55     protocol-up/link-up/admin-up       
+Lo56                 56.56.56.56     protocol-up/link-up/admin-up       
+Lo98                 10.98.98.1      protocol-up/link-up/admin-up       
+Lo99                 10.99.99.1      protocol-up/link-up/admin-up       
+Lo618                159.99.89.99    protocol-up/link-up/admin-up       
+Lo648                159.99.99.99    protocol-up/link-up/admin-up       
+Lo1001               1.1.1.1         protocol-up/link-up/admin-up       
+Eth1/9               1.1.1.1         protocol-down/link-down/admin-down 
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2023, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+
+Nexus 9000v is a demo version of the Nexus Operating System
+
+Software
+  BIOS: version 
+  NXOS: version 10.3(3) [Feature Release]
+  BIOS compile time:  
+  NXOS image file is: bootflash:///nxos64-cs.10.3.3.F.bin
+  NXOS compile time:  4/30/2023 12:00:00 [05/03/2023 20:18:42]
+
+Hardware
+  cisco Nexus9000 C9300v Chassis 
+  Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz with 16384716 kB of memory.
+  Processor Board ID 9K1C72YEFLR
+  Device name: Nithish
+  bootflash:    4287040 kB
+
+Kernel uptime is 34 day(s), 15 hour(s), 42 minute(s), 20 second(s)
+
+Last reset 
+  Reason: Unknown
+  System version: 
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
+
+Active Package(s):
+	
 
 
-
-Interface              IP-Address      OK? Method Status                Protocol
-GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up      
-GigabitEthernet2       unassigned      YES NVRAM  administratively down down    
-GigabitEthernet3       unassigned      YES NVRAM  administratively down down    
-Tunnel99911            169.254.255.213 YES manual up                    down    
-Tunnel99912            169.254.255.209 YES manual up                    down    
-pi@RaspPi4:~/Coding/C_folder/misc/ssh_stuff $ 
+pi@rasp4:~/Coding/c_folder/misc/network_stuff $ 
 */
