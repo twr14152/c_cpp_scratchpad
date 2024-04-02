@@ -39,3 +39,7 @@ Read test, read test..etc..etc..
 
 Doing the same for C++ in this repo. I created a folder cpp_folder that has my notes and sample code in it
 
+# Network_Scripts
+Will try and replicate some of the functionality of some of the other scripts I've written in other programming languages in C
+I feel this is a good way to reinforce and put to use some of the stuff I've learned.
+
