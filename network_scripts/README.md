@@ -1,5 +1,5 @@
 I wanted to try and recreate some of the automation scripts I've done in other languages in C. 
-- ssh_script_v2.c tested on arista ceos devies whoes authentication mode is keyboard interactive
+- ssh_script_v2.c tested on arista ceos devices whoes authentication mode is keyboard interactive
 - ssh_script_v1.c tested on Cisco DevNet switch. The authentication mode is password
 
 ssh_script_v2.c
