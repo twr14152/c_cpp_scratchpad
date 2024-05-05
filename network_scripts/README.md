@@ -1,10 +1,11 @@
 I wanted to try and recreate some of the automation scripts I've done in other languages in C. 
-- ssh_client_v2.c works with multiple authentication types and is working in my lab with arista ceos
-- ssh_client.c tested on Cisco DevNet switch and issue multiple show and configuration commands
+- ssh_script_v2.c tested on arista ceos devies whoes authentication mode is keyboard interactive
+- ssh_script_v1.c tested on Cisco DevNet switch. The authentication mode is password
 
-
+ssh_script_v2.c
 ```
-twr14152@DESKTOP-S55FNN9:~/code_folder/c_folder/network_scripts$ ./ssh_client_v2 ceos2 arista "run enable; config t; interface loopback 16; description testscript ; show run interface loopback16; no interface loopback 16"
+twr14152@DESKTOP-S55FNN9:~/code_folder/c_folder/network_scripts$ ./ssh_script_v2 ceos2 arista "run enable; config t; interface loopback 16; description testscript ; show run interface loopback16; no interface loopback 16"
+You are running c version 201710
 Entering Authentication Phase...
 Password:
 
@@ -21,6 +22,10 @@ interface Loopback16
 
 twr14152@DESKTOP-S55FNN9:~/code_folder/c_folder/network_scripts$
 
+---
+
+ssh_script_v1.c
+---
 twr14152@DESKTOP-S55FNN9:~/code_folder/c_folder$ ./ssh_script "sbx-nxos-mgmt.cisco.com" "show ip int brief"
 
 Command: show ip int brief
