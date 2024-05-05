@@ -22,10 +22,10 @@ interface Loopback16
 
 twr14152@DESKTOP-S55FNN9:~/code_folder/c_folder/network_scripts$
 
----
+```
 
 ssh_script_v1.c
----
+```
 twr14152@DESKTOP-S55FNN9:~/code_folder/c_folder$ ./ssh_script "sbx-nxos-mgmt.cisco.com" "show ip int brief"
 
 Command: show ip int brief
