@@ -177,7 +177,7 @@ int main(int argc , char *argv[])
     }
 
     // Set SSH options
-    //ssh_options_set(session, SSH_OPTIONS_LOG_VERBOSITY, &verbosity);
+    //ssh_options_set(session, SSH_OPTIONS_LOG_VERBOSITY, &verbosity); //un-comment to debug auth
     ssh_options_set(session, SSH_OPTIONS_HOST, argv[1]);
     ssh_options_set(session, SSH_OPTIONS_USER, argv[2]);
 
