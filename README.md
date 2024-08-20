@@ -20,9 +20,7 @@ Comments about books.
 
 - Think C - This book is my ideal type of book. Easy one to two day read. Reinforced concepts learned from other books with out extraneous exceptions. Its a good second book. More of an easy read less coding involved, but do recommend testing out some some of the examples. Approx 130 pages. 
 
-- TCPL - is a good/great reference book if you are infront of the computer when reading it.
-The concepts can get lost in the pages if your not coding it out to see for yourself. Makes it a slow read, at least for me.
-I prefer a middle ground between reading and coding. Plan on finishing this book this month. will update review upon completion.
+- TCPL - In January 2024 I made a goal of reading this book cover to cover in a week. To do every exercise in the book was not my goal. Thw goal was to read all the way through trying to understand the examples as written to the best of my ability. That said mission accomplished. It was only possible by doing it one hour at a time. The code presented was a challenge but i was able to gleen some knowledge from it. I will say i respwct those that used this as their only guide. I would say that given all the books avaiable on the subject I have found my understanding of the language has benifites from multiple sources. Its a good challenging book not one I would recommend to someone trying to learn the language. 
 
 - Effective C - I'm 3 chapters in so far and im losing interest. The writing style is not as direct or easy as the other books I've read. The added focus on security just makes the reading more challenging and dry. Will pause and revisit at a later date.
 
