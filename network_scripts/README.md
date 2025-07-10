@@ -72,10 +72,6 @@ interface loopback64
 
 
 toddriemenschneider@Todds-MacBook-Pro-2 misc % 
-
-
-
-twr14152@DESKTOP-S55FNN9:~/code_folder/c_folder$
 ```
 
 
