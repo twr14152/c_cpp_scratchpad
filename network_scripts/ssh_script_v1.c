@@ -4,7 +4,11 @@
 
 
 int main(int argc, char * argv[]) {
-
+  
+  // If you dont want to save the username and password in the script
+  // Start the for loop with i = 4
+  // Enter username and password after hostname when starting script
+  
   for (int i = 2; i < argc; i++) {
 
     printf("\nCommand: %s\n", argv[i]);
@@ -22,7 +26,7 @@ int main(int argc, char * argv[]) {
 
     // Set SSH options
     ssh_options_set(session, SSH_OPTIONS_HOST, argv[1]);
-    ssh_options_set(session, SSH_OPTIONS_USER, "username");   // or you could set value to argv[2] instead of raw string
+    ssh_options_set(session, SSH_OPTIONS_USER, "username"); // or argv[2]
 
     // Connect to SSH server
     rc = ssh_connect(session);
@@ -33,7 +37,7 @@ int main(int argc, char * argv[]) {
     }
 
     // Authenticate with password
-    rc = ssh_userauth_password(session, NULL, "password");   // you could also use argv[3] instead raw string
+    rc = ssh_userauth_password(session, NULL, "password"); // or argv[3]
     if (rc != SSH_AUTH_SUCCESS) {
       fprintf(stderr, "Error authenticating with password: %s\n", ssh_get_error(session));
       ssh_disconnect(session);
@@ -73,7 +77,7 @@ int main(int argc, char * argv[]) {
     }
 
     // Read command output
-    char buffer[256];
+    char buffer[2048];
     int nbytes;
     while ((nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0)) > 0) {
       fwrite(buffer, 1, nbytes, stdout);
